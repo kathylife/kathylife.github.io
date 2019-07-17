@@ -1,1 +1,1 @@
-# Kathy Life
+# Kathy Life Project
