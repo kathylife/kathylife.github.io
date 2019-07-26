@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2019-07-25T04:15:13+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">All Things in Moderation</title><link href="https://kathy.life/2019/07/25/all-things-in-moderation.html" rel="alternate" type="text/html" title="All Things in Moderation" /><published>2019-07-25T04:14:21+08:00</published><updated>2019-07-25T04:14:21+08:00</updated><id>https://kathy.life/2019/07/25/all-things-in-moderation</id><content type="html" xml:base="https://kathy.life/2019/07/25/all-things-in-moderation.html">&lt;p&gt;Late-night ramblings:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2019-07-26T14:48:10+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Trust Your Gut</title><link href="https://kathy.life/2019/07/26/trust-your-gut.html" rel="alternate" type="text/html" title="Trust Your Gut" /><published>2019-07-26T14:04:21+08:00</published><updated>2019-07-26T14:04:21+08:00</updated><id>https://kathy.life/2019/07/26/trust-your-gut</id><content type="html" xml:base="https://kathy.life/2019/07/26/trust-your-gut.html">&lt;p&gt;In the tail end of 2018, I built a prototype for a robot photographer. The goal was for it to one day serve as a photographer’s stunt double, so that photojournalists won’t always have to put &lt;em&gt;themselves&lt;/em&gt; in danger’s way in chaotic zones.&lt;/p&gt;
+
+&lt;p&gt;The further vision was to repurpose the robot to assist in search and rescue missions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/GVRT2KngzvY&quot;&gt;https://youtu.be/GVRT2KngzvY&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Advisors: “Our city is a very peaceful place. No one’s ever gonna need your product here.”&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Then I also built a rescue app. It’s a modernized emergency dispatch system for cases where 999 (911 in the US) calls are just not feasible. The app is blockchain-powered, which means it’s fast and more secure.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/5Cj03FGo358&quot;&gt;https://youtu.be/5Cj03FGo358&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Advisors: “Why would I need this when I could just call 999?”&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Such negative, old-fashioned feedback.&lt;/p&gt;
+
+&lt;p&gt;Did I let that stop me from building things? No, I just stopped listening to “advisors.”&lt;/p&gt;
+
+&lt;p&gt;The moral of the story is that it’s OK to trust our gut instincts and build whatever we believe are worth building. If nothing else, the experience alone is priceless.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">In the tail end of 2018, I built a prototype for a robot photographer. The goal was for it to one day serve as a photographer’s stunt double, so that photojournalists won’t always have to put themselves in danger’s way in chaotic zones.</summary></entry><entry><title type="html">All Things in Moderation</title><link href="https://kathy.life/2019/07/25/all-things-in-moderation-copy.html" rel="alternate" type="text/html" title="All Things in Moderation" /><published>2019-07-25T04:14:21+08:00</published><updated>2019-07-25T04:14:21+08:00</updated><id>https://kathy.life/2019/07/25/all-things-in-moderation%20copy</id><content type="html" xml:base="https://kathy.life/2019/07/25/all-things-in-moderation-copy.html">&lt;p&gt;Late-night ramblings:&lt;/p&gt;
 
 &lt;p&gt;Code committed and pushed.&lt;/p&gt;
 
