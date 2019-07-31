@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2019-07-26T14:48:10+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Trust Your Gut</title><link href="https://kathy.life/2019/07/26/trust-your-gut.html" rel="alternate" type="text/html" title="Trust Your Gut" /><published>2019-07-26T14:04:21+08:00</published><updated>2019-07-26T14:04:21+08:00</updated><id>https://kathy.life/2019/07/26/trust-your-gut</id><content type="html" xml:base="https://kathy.life/2019/07/26/trust-your-gut.html">&lt;p&gt;In the tail end of 2018, I built a prototype for a robot photographer. The goal was for it to one day serve as a photographer’s stunt double, so that photojournalists won’t always have to put &lt;em&gt;themselves&lt;/em&gt; in danger’s way in chaotic zones.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2019-07-31T18:40:08+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Likelihood</title><link href="https://kathy.life/2019/07/31/likelihood.html" rel="alternate" type="text/html" title="Likelihood" /><published>2019-07-31T05:04:21+08:00</published><updated>2019-07-31T05:04:21+08:00</updated><id>https://kathy.life/2019/07/31/likelihood</id><content type="html" xml:base="https://kathy.life/2019/07/31/likelihood.html">&lt;p&gt;I could tell something must have gone wrong. The last stretches of the highway leading up to Tai Lam Tunnel — including the 3.8-kilometer tunnel itself — were brought to a complete standstill.&lt;/p&gt;
+
+&lt;p&gt;As it turns out, there was a crash involving two double-decker buses, injuring 77 people.&lt;/p&gt;
+
+&lt;p&gt;Before I ramble on, I’d like to wish everyone who’s injured a speedy recovery.&lt;/p&gt;
+
+&lt;p&gt;I happened to be minutes behind the crash. While I was stuck in the heavy traffic with nothing better to do, I couldn’t help but sat there and overthought the situation a bit.&lt;/p&gt;
+
+&lt;h2&gt;Statistics&lt;/h2&gt;
+
+&lt;p&gt;Back in the days of traditional statistics, the mathematical analysis would be something like this:&lt;/p&gt;
+
+&lt;p&gt;What are the odds of being involved in that accident, out of…&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;All the people&lt;/li&gt;
+  &lt;li&gt;Who were headed that direction&lt;/li&gt;
+  &lt;li&gt;Taking that particular means of transportation&lt;/li&gt;
+  &lt;li&gt;At that specific time&lt;/li&gt;
+  &lt;li&gt;(Plus a whole bunch of other factors)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don’t worry, the result isn’t something that’s alarming at all. But at the same time, the ballpark figure also isn’t telling you much.&lt;/p&gt;
+
+&lt;h2&gt;Data Science&lt;/h2&gt;
+
+&lt;p&gt;And then there is modern-day data science.&lt;/p&gt;
+
+&lt;p&gt;How likely is it for someone to be involved in that accident, given:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The number of past accidents&lt;/li&gt;
+  &lt;li&gt;That occurred in the proximity of the crash site&lt;/li&gt;
+  &lt;li&gt;Around the same time of the day&lt;/li&gt;
+  &lt;li&gt;In a similar model of vehicle&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s the thing, though. The prediction can range from wildly inaccurate to highly accurate, depending upon various conditions.&lt;/p&gt;
+
+&lt;p&gt;Has enough data been used? Is the data relevant?&lt;/p&gt;
+
+&lt;p&gt;Have enough elements been taken into account? Did we forget to consider things like weather, driver’s physical state, materials used, et cetera et cetera?&lt;/p&gt;
+
+&lt;p&gt;And that is precisely the danger of relying too heavily on half-baked, “data-driven” “A.I.” algorithms in any decision-making process.&lt;/p&gt;
+
+&lt;p&gt;I have shared similar thoughts on these risks in some of my past talks, except with different cases and scenarios.&lt;/p&gt;
+
+&lt;p&gt;(But now it’s time for me to go to bed and stop overthinking random things for a few hours.)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">I could tell something must have gone wrong. The last stretches of the highway leading up to Tai Lam Tunnel — including the 3.8-kilometer tunnel itself — were brought to a complete standstill.</summary></entry><entry><title type="html">Trust Your Gut</title><link href="https://kathy.life/2019/07/26/trust-your-gut.html" rel="alternate" type="text/html" title="Trust Your Gut" /><published>2019-07-26T14:04:21+08:00</published><updated>2019-07-26T14:04:21+08:00</updated><id>https://kathy.life/2019/07/26/trust-your-gut</id><content type="html" xml:base="https://kathy.life/2019/07/26/trust-your-gut.html">&lt;p&gt;In the tail end of 2018, I built a prototype for a robot photographer. The goal was for it to one day serve as a photographer’s stunt double, so that photojournalists won’t always have to put &lt;em&gt;themselves&lt;/em&gt; in danger’s way in chaotic zones.&lt;/p&gt;
 
 &lt;p&gt;The further vision was to repurpose the robot to assist in search and rescue missions.&lt;/p&gt;
 
