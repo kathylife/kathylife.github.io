@@ -48,4 +48,9 @@ var store = [{
         "excerpt":"Data science is now a lot more mature than it was back in 2003 (the year when the SARS epidemic struck). Understandably, big data is already playing a big role in helping to fight infectious diseases like Ebola and polio. How can we leverage data science advancements to speed up...","categories": [],
         "tags": [],
         "url": "https://kathy.life/2020/01/26/data-science-can-only-help-so-much.html",
+        "teaser":null},{
+        "title": "Communication Between Someone Blind and Someone Deaf",
+        "excerpt":"Year 2020 has NOT been off to a good start for most of the world, which is why I am now more motivated than ever to squeeze my finite time on Earth to create useful tech. What I am currently working on, is an app that lets a deaf person...","categories": [],
+        "tags": [],
+        "url": "https://kathy.life/2020/02/17/communication-between-someone-blind-and-someone-deaf.html",
         "teaser":null}]

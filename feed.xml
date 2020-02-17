@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2020-02-16T23:40:03+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Data Science Can Only Help So Much</title><link href="https://kathy.life/2020/01/26/data-science-can-only-help-so-much.html" rel="alternate" type="text/html" title="Data Science Can Only Help So Much" /><published>2020-01-26T18:27:21+08:00</published><updated>2020-01-26T18:27:21+08:00</updated><id>https://kathy.life/2020/01/26/data-science-can-only-help-so-much</id><content type="html" xml:base="https://kathy.life/2020/01/26/data-science-can-only-help-so-much.html">&lt;p&gt;Data science is now a lot more mature than it was back in 2003 (the year when the SARS epidemic struck).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2020-02-17T10:16:59+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Communication Between Someone Blind and Someone Deaf</title><link href="https://kathy.life/2020/02/17/communication-between-someone-blind-and-someone-deaf.html" rel="alternate" type="text/html" title="Communication Between Someone Blind and Someone Deaf" /><published>2020-02-17T10:16:21+08:00</published><updated>2020-02-17T10:16:21+08:00</updated><id>https://kathy.life/2020/02/17/communication-between-someone-blind-and-someone-deaf</id><content type="html" xml:base="https://kathy.life/2020/02/17/communication-between-someone-blind-and-someone-deaf.html">&lt;p&gt;Year 2020 has NOT been off to a good start for most of the world, which is why I am now more motivated than ever to squeeze my finite time on Earth to create useful tech.&lt;/p&gt;
+
+&lt;p&gt;What I am currently working on, is an app that lets a deaf person communicate with a blind person.&lt;/p&gt;
+
+&lt;p&gt;In some ways, this is bringing one of my previous apps* a few steps further.&lt;/p&gt;
+
+&lt;p&gt;Open-source, living journals are on their way as we speak. Over the last year, I also made the time to get some channel establishments out of the way, including a podcast and a YouTube channel.&lt;/p&gt;
+
+&lt;p&gt;(That’s a lot of breaking out of comfort zone!)&lt;/p&gt;
+
+&lt;p&gt;I just need to remind myself to update the content more frequently.&lt;/p&gt;
+
+&lt;p&gt;Now this new app is also being developed in a “side project” fashion, so dev speed is pretty much the last thing I focus on. That being said, we should see at least a demo sometime this year.&lt;/p&gt;
+
+&lt;p&gt;==========&lt;/p&gt;
+
+&lt;p&gt;*In 2019, I built Listenabel, an interface that reads labels aloud. As a side project, its progress has been slow but steady.&lt;/p&gt;
+
+&lt;p&gt;I am happy to report that the home stretch is near — for making the app available for public use, including people who happen to be blind or visually impaired.&lt;/p&gt;
+
+&lt;p&gt;The project won’t stop there, though. Nor will I.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Year 2020 has NOT been off to a good start for most of the world, which is why I am now more motivated than ever to squeeze my finite time on Earth to create useful tech.</summary></entry><entry><title type="html">Data Science Can Only Help So Much</title><link href="https://kathy.life/2020/01/26/data-science-can-only-help-so-much.html" rel="alternate" type="text/html" title="Data Science Can Only Help So Much" /><published>2020-01-26T18:27:21+08:00</published><updated>2020-01-26T18:27:21+08:00</updated><id>https://kathy.life/2020/01/26/data-science-can-only-help-so-much</id><content type="html" xml:base="https://kathy.life/2020/01/26/data-science-can-only-help-so-much.html">&lt;p&gt;Data science is now a lot more mature than it was back in 2003 (the year when the SARS epidemic struck).&lt;/p&gt;
 
 &lt;p&gt;Understandably, big data is already playing a big role in helping to fight infectious diseases like Ebola and polio.&lt;/p&gt;
 
@@ -167,12 +187,4 @@
 
 &lt;p&gt;Are you proud of what you do? Will you still be proud of what you do 10 years from now? What about 50 years from now?&lt;/p&gt;
 
-&lt;p&gt;What are your dreams? Are there any steps you can start taking today to get closer to those dreams? If you don’t start taking the steps, will you regret it 10 years later? What about 50 years later?&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">I have updated the About section of my website a little bit. It now includes some of the questions that I constantly ask myself and reflect upon:</summary></entry><entry><title type="html">Welcome to My New Blog</title><link href="https://kathy.life/2019/07/14/welcome-to-my-new-blog.html" rel="alternate" type="text/html" title="Welcome to My New Blog" /><published>2019-07-14T18:05:21+08:00</published><updated>2019-07-14T18:05:21+08:00</updated><id>https://kathy.life/2019/07/14/welcome-to-my-new-blog</id><content type="html" xml:base="https://kathy.life/2019/07/14/welcome-to-my-new-blog.html">&lt;p&gt;In the past 3 years or so, I have been fortunate enough to garner a humble readership on Medium, publishing both technical and non-technical posts alike.&lt;/p&gt;
-
-&lt;p&gt;As pleasant to use as Medium has been, I have decided to once again move to a self-hosted blog. That way I get to retain control of the content.&lt;/p&gt;
-
-&lt;p&gt;This new blog is primarily built with free tools. More specifically, I use Jekyll as the static site generator. The resulting site is hosted on GitHub Pages. The only thing I have to pay for is the domain name.&lt;/p&gt;
-
-&lt;p&gt;I am hoping that this will become a consolidated place for all of my ramblings. So future Medium-worthy articles will most likely land here. I may also choose to publish some status updates here instead of up on social media.&lt;/p&gt;
-
-&lt;p&gt;It’s not meant to be a social media cleanse, per se. I just quite like the idea of having a central, self-hosted means of content consolidation.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">In the past 3 years or so, I have been fortunate enough to garner a humble readership on Medium, publishing both technical and non-technical posts alike.</summary></entry></feed>
+&lt;p&gt;What are your dreams? Are there any steps you can start taking today to get closer to those dreams? If you don’t start taking the steps, will you regret it 10 years later? What about 50 years later?&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">I have updated the About section of my website a little bit. It now includes some of the questions that I constantly ask myself and reflect upon:</summary></entry></feed>
