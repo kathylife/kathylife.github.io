@@ -53,4 +53,14 @@ var store = [{
         "excerpt":"Year 2020 has NOT been off to a good start for most of the world, which is why I am now more motivated than ever to squeeze my finite time on Earth to create useful tech. What I am currently working on, is an app that lets a deaf person...","categories": [],
         "tags": [],
         "url": "https://kathy.life/2020/02/17/communication-between-someone-blind-and-someone-deaf.html",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Level Up",
+        "excerpt":"We will have leveled up when this is all over.   It’s more than just an involuntary lockdown. Think of this period of trying times as a secret training camp — from which we will emerge stronger, more intelligent, more compassionate, and with slightly longer hair.  ","categories": [],
+        "tags": [],
+        "url": "https://kathy.life/2020/03/25/level-up.html",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Drones",
+        "excerpt":"Sometimes we are like drones. Bringing others down won’t make you fly higher.  ","categories": [],
+        "tags": [],
+        "url": "https://kathy.life/2020/03/25/drones.html",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"}]
