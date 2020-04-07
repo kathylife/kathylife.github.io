@@ -63,4 +63,9 @@ var store = [{
         "excerpt":"Sometimes we are like drones. Bringing others down won’t make you fly higher.  ","categories": [],
         "tags": [],
         "url": "https://kathy.life/2020/03/25/drones/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Prototyping Paradigm Shift",
+        "excerpt":"As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype. Amidst the pandemic, the questions we should now be asking ourselves are: First and foremost, how fast...","categories": [],
+        "tags": [],
+        "url": "https://kathy.life/2020/04/07/prototyping-paradigm-shift/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"}]
