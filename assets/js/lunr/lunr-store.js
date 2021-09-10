@@ -78,4 +78,9 @@ var store = [{
         "excerpt":"History has repeatedly told us not to repeat it.   We have been historically terrible at learning from what history tells us.  ","categories": [],
         "tags": [],
         "url": "https://kathy.life/2020/12/13/history/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Exit",
+        "excerpt":"Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.  ","categories": [],
+        "tags": [],
+        "url": "https://kathy.life/2021/09/10/exit/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"}]
