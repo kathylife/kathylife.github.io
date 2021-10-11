@@ -83,4 +83,9 @@ var store = [{
         "excerpt":"Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.  ","categories": [],
         "tags": [],
         "url": "https://kathy.life/2021/09/10/exit/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Milkweed",
+        "excerpt":"Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die. Be yourself, and the right people will come by at some point or another. Those...","categories": [],
+        "tags": [],
+        "url": "https://kathy.life/2021/10/12/milkweed/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"}]
