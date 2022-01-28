@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2021-10-12T22:08:39+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Milkweed</title><link href="https://kathy.life/2021/10/12/milkweed/" rel="alternate" type="text/html" title="Milkweed" /><published>2021-10-12T03:33:21+08:00</published><updated>2021-10-12T03:33:21+08:00</updated><id>https://kathy.life/2021/10/12/milkweed</id><content type="html" xml:base="https://kathy.life/2021/10/12/milkweed/">&lt;p&gt;Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2022-01-28T18:10:08+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Street Signs</title><link href="https://kathy.life/2022/01/28/street-signs/" rel="alternate" type="text/html" title="Street Signs" /><published>2022-01-28T05:33:21+08:00</published><updated>2022-01-28T05:33:21+08:00</updated><id>https://kathy.life/2022/01/28/street-signs</id><content type="html" xml:base="https://kathy.life/2022/01/28/street-signs/">&lt;p&gt;&lt;img src=&quot;/assets/images/2022/01/28/street_signs.jpg&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;[Kingston Street, Causeway Bay, 2022]&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;The street signs in Hong Kong — as compact as they tend to be in size — subtly pack a lot of useful information.&lt;/p&gt;
+
+&lt;p&gt;Take this one in the picture. The straight edge on the left of the sign tells us that there is no more building further down the left, indicating that the street begins right there.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, the pointy edge on the right says there are more buildings or dwellings toward that direction. More specifically, #9 to #11, as printed on the sign as well.&lt;/p&gt;
+
+&lt;p&gt;One could then speculate that the opposite side of the street (where I was standing at the time) houses the even-numbered premises. That is exactly the case here.&lt;/p&gt;
+
+&lt;p&gt;----------&lt;/p&gt;
+
+&lt;p&gt;Source: My own observation&lt;/p&gt;
+
+&lt;p&gt;Camera: Rollei 35 S&lt;/p&gt;
+
+&lt;p&gt;Film: Fujifilm Superia X-TRA 400 (expired in April, 2018)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html"></summary></entry><entry><title type="html">Milkweed</title><link href="https://kathy.life/2021/10/12/milkweed/" rel="alternate" type="text/html" title="Milkweed" /><published>2021-10-12T03:33:21+08:00</published><updated>2021-10-12T03:33:21+08:00</updated><id>https://kathy.life/2021/10/12/milkweed</id><content type="html" xml:base="https://kathy.life/2021/10/12/milkweed/">&lt;p&gt;Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.&lt;/p&gt;
 
 &lt;p&gt;Be yourself, and the right people will come by at some point or another. Those who are not meant to be in your life are simply that.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.</summary></entry><entry><title type="html">Exit</title><link href="https://kathy.life/2021/09/10/exit/" rel="alternate" type="text/html" title="Exit" /><published>2021-09-10T23:03:21+08:00</published><updated>2021-09-10T23:03:21+08:00</updated><id>https://kathy.life/2021/09/10/exit</id><content type="html" xml:base="https://kathy.life/2021/09/10/exit/">&lt;p&gt;Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.</summary></entry><entry><title type="html">History</title><link href="https://kathy.life/2020/12/13/history/" rel="alternate" type="text/html" title="History" /><published>2020-12-13T03:33:21+08:00</published><updated>2020-12-13T03:33:21+08:00</updated><id>https://kathy.life/2020/12/13/history</id><content type="html" xml:base="https://kathy.life/2020/12/13/history/">&lt;p&gt;History has repeatedly told us not to repeat it.&lt;/p&gt;
 
@@ -59,26 +77,4 @@
 
 &lt;p&gt;How can we leverage data science advancements to speed up the eradication of the latest coronavirus outbreak? That sure is giving scientists some food for thought this week.&lt;/p&gt;
 
-&lt;p&gt;That being said, no predictive model — no matter how accurate — is going to keep us from harm’s way if policymakers are not stepping up to take proper measures to protect the people.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Data science is now a lot more mature than it was back in 2003 (the year when the SARS epidemic struck).</summary></entry><entry><title type="html">Infinite Power</title><link href="https://kathy.life/2019/09/15/infinite-power/" rel="alternate" type="text/html" title="Infinite Power" /><published>2019-09-15T03:52:21+08:00</published><updated>2019-09-15T03:52:21+08:00</updated><id>https://kathy.life/2019/09/15/infinite-power</id><content type="html" xml:base="https://kathy.life/2019/09/15/infinite-power/">&lt;p&gt;Coal, petroleum, natural gas… You probably guessed it: I am naming common examples of finite energy resources — finite being the operative word.&lt;/p&gt;
-
-&lt;p&gt;Once any of these is used up, there will be no way to replenish it. What’s gone is gone.&lt;/p&gt;
-
-&lt;p&gt;On the other end of the renewability spectrum, we have solar energy, wind power, hydropower — just to name a few.&lt;/p&gt;
-
-&lt;p&gt;What I was thinking about just now though (using my finite, non-renewable time, no less), is a special type of infinite power. Namely, brain-power.&lt;/p&gt;
-
-&lt;p&gt;There are a myriad of mind-related resources that we enjoy an abundance of, yet are far too often underutilized.&lt;/p&gt;
-
-&lt;p&gt;Some examples would be knowledge, creativity, and kindness.&lt;/p&gt;
-
-&lt;p&gt;Knowledge, creativity, and kindness normally never run out, if so chosen.&lt;/p&gt;
-
-&lt;p&gt;Employing or spreading any of the three won’t reduce its total availability at all. In fact, sharing it with others may even inspire people to go on and generate *more* of it.&lt;/p&gt;
-
-&lt;p&gt;When you teach someone something, you don’t lose what you know. There isn’t going to be less for others to learn, either.&lt;/p&gt;
-
-&lt;p&gt;When you create something, it doesn’t take away what you or others may create in the future.&lt;/p&gt;
-
-&lt;p&gt;When you are kind to someone, it doesn’t reduce your own positive energy at all. Plus, kindness is infectious.&lt;/p&gt;
-
-&lt;p&gt;Here’s an added benefit to consider: Knowledge, creativity, and kindness are major ingredients in coming up with responsible solutions to tackle our resource scarcity problem.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Coal, petroleum, natural gas… You probably guessed it: I am naming common examples of finite energy resources — finite being the operative word.</summary></entry></feed>
+&lt;p&gt;That being said, no predictive model — no matter how accurate — is going to keep us from harm’s way if policymakers are not stepping up to take proper measures to protect the people.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Data science is now a lot more mature than it was back in 2003 (the year when the SARS epidemic struck).</summary></entry></feed>
