@@ -1,4 +1,189 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2022-03-24T19:29:16+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">If You Name It</title><link href="https://kathy.life/final-static/if-you-name-it/" rel="alternate" type="text/html" title="If You Name It" /><published>2022-03-23T17:33:21+08:00</published><updated>2022-03-23T17:33:21+08:00</updated><id>https://kathy.life/final-static/if-you-name-it</id><content type="html" xml:base="https://kathy.life/final-static/if-you-name-it/">&lt;p&gt;When we give our pet project a name and identity, we become that much more attached to it and, in turn, may just have a higher likelihood of seeing it through.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2022-03-27T22:11:04+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">How to Hook Up Custom Domain Emails to Free Gmail Account</title><link href="https://kathy.life/final-static/set-up-custom-domain-emails-free/" rel="alternate" type="text/html" title="How to Hook Up Custom Domain Emails to Free Gmail Account" /><published>2022-03-26T17:18:21+08:00</published><updated>2022-03-26T17:18:21+08:00</updated><id>https://kathy.life/final-static/set-up-custom-domain-emails-free</id><content type="html" xml:base="https://kathy.life/final-static/set-up-custom-domain-emails-free/">&lt;p&gt;In the previous blog post, I had signed up for a free Gmail account to manage emails for the Final Static project. As a follow-up, I am going to document the steps I took to connect it with the custom domain I had newly purchased.&lt;/p&gt;
+
+&lt;p&gt;Under this setup, I would essentially enjoy all the free services that come with a Gmail account (including 15 GB of cloud storage), while having a professional customer-facing email address that ends with the custom domain.&lt;/p&gt;
+
+&lt;p&gt;And if you happen to be in a similar situation with your project, this documentation will hopefully serve as a helpful tutorial for you as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-not-just-use-google-workspace&quot;&gt;Why not just use Google Workspace?&lt;/h2&gt;
+
+&lt;p&gt;The main reason is to cut down on recurring costs, at least at the early stages.&lt;/p&gt;
+
+&lt;p&gt;Granted, a Google Workspace (formerly G Suite) Business Starter plan will indeed allow you to create a custom business email and get 30 GB cloud storage per user (at the time of this post).&lt;/p&gt;
+
+&lt;p&gt;Plus, once you have signed up for a Workspace account, you will have the option to create email “aliases” — which will be useful for setting up several different identities / message filters for your brand.&lt;/p&gt;
+
+&lt;p&gt;And for the sake of full disclosure, I do use Google Workspace for my *main* company email addresses.&lt;/p&gt;
+
+&lt;p&gt;However, if you are like me and actively run a ton of pet projects, those Workspace plan fees will add up…&lt;/p&gt;
+
+&lt;p&gt;Let’s say you have 20 standalone projects that each uses its own domain. Even just the basic Workspace fees would come out to be:&lt;/p&gt;
+
+&lt;p&gt;$6.00 / user / month x 12 months x 20 projects = $1,440 per year&lt;/p&gt;
+
+&lt;p&gt;Versus…&lt;/p&gt;
+
+&lt;p&gt;Cost of this setup = $0&lt;/p&gt;
+
+&lt;p&gt;You will only need to pay the domain fee on an annual basis.&lt;/p&gt;
+
+&lt;p&gt;(Side note: And given that this new project is about NFTs, I thought it’s also worth mentioning that NFT domains — which you would pay once and own forever — may soon become more common, and thus further eliminating the recurring fees to “rent” web2 domains. Perhaps more on that in a future post.)&lt;/p&gt;
+
+&lt;h2 id=&quot;the-goals-of-my-setup&quot;&gt;The goals of my setup&lt;/h2&gt;
+
+&lt;p&gt;What I was trying to achieve:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Get a &lt;strong&gt;custom domain name&lt;/strong&gt; (finalstatic.io) for an annual subscription fee from Google Domains&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sign up for a &lt;strong&gt;free Gmail account&lt;/strong&gt; to use with the project (finalstatic.io@gmail.com)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set up a &lt;strong&gt;custom domain email address for free&lt;/strong&gt; (hello@finalstatic.com) via Google Domains, making use of the purchased custom domain&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Have emails that are sent to the custom domain email (hello@finalstatic.io) automatically &lt;strong&gt;forwarded to the Gmail account&lt;/strong&gt; (finalstatic.io@gmail.com)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Send email as&lt;/strong&gt; hello@finalstatic.io&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eliminate the need to purchase a new Google Workspace account for every new project&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make the most of all the free Google services that come with the Gmail account&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;now-the-step-by-step-guide&quot;&gt;Now, the step-by-step guide&lt;/h2&gt;
+
+&lt;p&gt;1. Sign up for a free Gmail account. In my case, it’s finalstatic.io@gmail.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_01-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2. Purchase a custom domain for your project from Google Domains.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/23/final-static_google-domains.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3. From Google Domains, set up Email Forwarding: Click on &lt;strong&gt;Add email alias&lt;/strong&gt; under the Email tab &amp;gt; type in the alias you want &amp;gt; enter the existing email you want to forward to &amp;gt; click the &lt;strong&gt;Add&lt;/strong&gt; button&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_03-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In my case, I’m trying to have messages sent to hello@finalstatic.io forwarded to my Gmail, finalstatic.io@gmail.com.&lt;/p&gt;
+
+&lt;p&gt;The * symbol acts as a wildcard here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_03-b.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_03-c.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4. Confirm your existing email (check your Gmail inbox for the message).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_04-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;At this point, you are pretty much good to go!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;All emails sent to finalstatic.io can now be found in the Gmail inbox of finalstatic.io@gmail.com.&lt;/p&gt;
+
+&lt;p&gt;Simple as that!&lt;/p&gt;
+
+&lt;h2 id=&quot;optional&quot;&gt;[Optional]&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;But what if you want to be able to “send” or “reply to” emails from your custom email address?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You are probably aware that with this setup, you don’t actually “send”” and “receive” emails with your custom email (hello@finalstatic.io for me).&lt;/p&gt;
+
+&lt;p&gt;You don’t really touch an inbox or other folders of the custom email.&lt;/p&gt;
+
+&lt;p&gt;But thanks to the magic of email forwarding and Gmail alias, you will be able to act as if you are doing just that.&lt;/p&gt;
+
+&lt;h3 id=&quot;additional-steps-to-set-up-the-sending-from-part&quot;&gt;Additional steps to set up the “sending from” part:&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;strong&gt;Part I.&lt;/strong&gt; Set up an App Password for your Gmail account to allow you to use the Gmail SMTP servers securely.&lt;/p&gt;
+
+&lt;p&gt;5. Go to the Gmail account. Click on your user icon in the upper right corner to bring up the user menu.&lt;/p&gt;
+
+&lt;p&gt;6. Click &lt;strong&gt;Manage your Google Account&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_06-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7. In the Google Account screen, click on the &lt;strong&gt;Security&lt;/strong&gt; tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_07-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;8. In the &lt;strong&gt;Signing in to Google&lt;/strong&gt; section, click on the &lt;strong&gt;App passwords&lt;/strong&gt; bar.&lt;/p&gt;
+
+&lt;p&gt;You may be asked to re-enter your password at this point.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_08-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You must have &lt;strong&gt;2-Step Verification&lt;/strong&gt; enabled for the App passwords option to be available. If it is not, click on &lt;strong&gt;2-Step Verification&lt;/strong&gt; and follow the steps to enable 2-Step Verification. Then continue to set the App password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_08-b.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_08-c.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;9. In the App passwords box, select &lt;strong&gt;Mail&lt;/strong&gt; for the app, select &lt;strong&gt;Other&lt;/strong&gt; for the device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_09-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;10. Enter the name of your domain for the “other” device, and click Generate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_10-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;11. The Generated app password box will display a 16-character password. Copy this password. You will need it when you add your new send-as (forwarded) account.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_11-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;12. Return to your Gmail screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Part II.&lt;/strong&gt; Add the alias as an account to your Gmail inbox.&lt;/p&gt;
+
+&lt;p&gt;13. In the top right corner, click the &lt;strong&gt;Settings&lt;/strong&gt; button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_13-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;14. Click the &lt;strong&gt;See all settings&lt;/strong&gt; button.&lt;/p&gt;
+
+&lt;p&gt;15. In the &lt;strong&gt;Settings&lt;/strong&gt; screen, click the &lt;strong&gt;Accounts and Import&lt;/strong&gt; tab.&lt;/p&gt;
+
+&lt;p&gt;16. Scroll down to &lt;strong&gt;Send mail as&lt;/strong&gt; and click &lt;strong&gt;Add another email address&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_16-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;17. In the first &lt;strong&gt;Add another email address&lt;/strong&gt; box, enter the name you want recipients of your email to see (such as “Support Team” or “Sales” or any other name for this contact) and the forwarded email address you are setting up.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_17-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;18. Click &lt;strong&gt;Next Step&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Part III.&lt;/strong&gt; Set the Gmail SMTP server as the mail server for your forwarded alias, using the generated App Password.&lt;/p&gt;
+
+&lt;p&gt;19. In the second &lt;strong&gt;Add another email address&lt;/strong&gt; box, change the values in fields to enter the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SMTP Server:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;smtp.gmail.com&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Port:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;465&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Username:&lt;/strong&gt; Your Gmail account (the one you are logged in as)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Password:&lt;/strong&gt; The generated app password you copied in Step 11.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_19-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;20. Click &lt;strong&gt;Add Account&lt;/strong&gt;. If you see an error message, check to make sure you have entered the SMTP server, Port, Username, and Password correctly.&lt;/p&gt;
+
+&lt;p&gt;21. After you have successfully added the account, return to Gmail. You will see a message from &lt;strong&gt;Gmail Team&lt;/strong&gt; with the subject &lt;strong&gt;Gmail Confirmation: Send Mail As&lt;/strong&gt; and the address you have just added. Follow the instructions in the message to confirm the email address.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_21-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_21-b.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;22. When you send mail from your Gmail account, click the triangle next to your &lt;strong&gt;From&lt;/strong&gt; address to choose to send the message from the account you just added.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_22-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As things stand, the first edition of this guide has been one of my most viewed Medium articles thus far.</summary></entry><entry><title type="html">If You Name It</title><link href="https://kathy.life/final-static/if-you-name-it/" rel="alternate" type="text/html" title="If You Name It" /><published>2022-03-23T17:33:21+08:00</published><updated>2022-03-23T17:33:21+08:00</updated><id>https://kathy.life/final-static/if-you-name-it</id><content type="html" xml:base="https://kathy.life/final-static/if-you-name-it/">&lt;p&gt;When we give our pet project a name and identity, we become that much more attached to it and, in turn, may just have a higher likelihood of seeing it through.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-new-project&quot;&gt;The New Project&lt;/h2&gt;
 
@@ -118,24 +303,4 @@
 
 &lt;p&gt;5. What are some financing options? Whilst I don’t recommend profiting off of commercializing anti-COVID solutions, there are quite a few funding streams that will help accelerate the realization of your social missions. (Just watch out for scams.)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.</summary></entry><entry><title type="html">Drones</title><link href="https://kathy.life/blog/drones/" rel="alternate" type="text/html" title="Drones" /><published>2020-03-25T04:04:21+08:00</published><updated>2020-03-25T04:04:21+08:00</updated><id>https://kathy.life/blog/drones</id><content type="html" xml:base="https://kathy.life/blog/drones/">&lt;p&gt;Sometimes we are like drones. Bringing others down won’t make you fly higher.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Sometimes we are like drones. Bringing others down won’t make you fly higher.</summary></entry><entry><title type="html">Level Up</title><link href="https://kathy.life/blog/level-up/" rel="alternate" type="text/html" title="Level Up" /><published>2020-03-25T02:55:21+08:00</published><updated>2020-03-25T02:55:21+08:00</updated><id>https://kathy.life/blog/level-up</id><content type="html" xml:base="https://kathy.life/blog/level-up/">&lt;p&gt;We will have leveled up when this is all over.&lt;/p&gt;
 
-&lt;p&gt;It’s more than just an involuntary lockdown. Think of this period of trying times as a secret training camp — from which we will emerge stronger, more intelligent, more compassionate, and with slightly longer hair.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">We will have leveled up when this is all over.</summary></entry><entry><title type="html">Communication Between Someone Blind and Someone Deaf</title><link href="https://kathy.life/blog/communication-between-someone-blind-and-someone-deaf/" rel="alternate" type="text/html" title="Communication Between Someone Blind and Someone Deaf" /><published>2020-02-17T10:16:21+08:00</published><updated>2020-02-17T10:16:21+08:00</updated><id>https://kathy.life/blog/communication-between-someone-blind-and-someone-deaf</id><content type="html" xml:base="https://kathy.life/blog/communication-between-someone-blind-and-someone-deaf/">&lt;p&gt;Year 2020 has NOT been off to a good start for most of the world, which is why I am now more motivated than ever to squeeze my finite time on Earth to create useful tech.&lt;/p&gt;
-
-&lt;p&gt;What I am currently working on, is an app that lets a deaf person communicate with a blind person.&lt;/p&gt;
-
-&lt;p&gt;In some ways, this is bringing one of my previous apps* a few steps further.&lt;/p&gt;
-
-&lt;p&gt;Open-source, living journals are on their way as we speak. Over the last year, I also made the time to get some channel establishments out of the way, including a podcast and a YouTube channel.&lt;/p&gt;
-
-&lt;p&gt;(That’s a lot of breaking out of comfort zone!)&lt;/p&gt;
-
-&lt;p&gt;I just need to remind myself to update the content more frequently.&lt;/p&gt;
-
-&lt;p&gt;Now this new app is also being developed in a “side project” fashion, so dev speed is pretty much the last thing I focus on. That being said, we should see at least a demo sometime this year.&lt;/p&gt;
-
-&lt;p&gt;==========&lt;/p&gt;
-
-&lt;p&gt;*In 2019, I built Listenabel, an interface that reads labels aloud. As a side project, its progress has been slow but steady.&lt;/p&gt;
-
-&lt;p&gt;I am happy to report that the home stretch is near — for making the app available for public use, including people who happen to be blind or visually impaired.&lt;/p&gt;
-
-&lt;p&gt;The project won’t stop there, though. Nor will I.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Year 2020 has NOT been off to a good start for most of the world, which is why I am now more motivated than ever to squeeze my finite time on Earth to create useful tech.</summary></entry></feed>
+&lt;p&gt;It’s more than just an involuntary lockdown. Think of this period of trying times as a secret training camp — from which we will emerge stronger, more intelligent, more compassionate, and with slightly longer hair.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">We will have leveled up when this is all over.</summary></entry></feed>

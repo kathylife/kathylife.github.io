@@ -99,6 +99,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/final-static/if-you-name-it/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "How to Hook Up Custom Domain Emails to Free Gmail Account",
+        "excerpt":"In the previous blog post, I had signed up for a free Gmail account to manage emails for the Final Static project. As a follow-up, I am going to document the steps I took to connect it with the custom domain I had newly purchased. Under this setup, I would...","categories": ["final-static"],
+        "tags": [],
+        "url": "https://kathy.life/final-static/set-up-custom-domain-emails-free/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
