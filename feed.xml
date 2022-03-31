@@ -1,4 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2022-03-30T02:07:15+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">How to Hook Up Custom Domain Emails to Free Gmail Account</title><link href="https://kathy.life/final-static/set-up-custom-domain-emails-free/" rel="alternate" type="text/html" title="How to Hook Up Custom Domain Emails to Free Gmail Account" /><published>2022-03-26T17:18:21+08:00</published><updated>2022-03-26T17:18:21+08:00</updated><id>https://kathy.life/final-static/set-up-custom-domain-emails-free</id><content type="html" xml:base="https://kathy.life/final-static/set-up-custom-domain-emails-free/">&lt;p&gt;In the previous blog post, I had signed up for a free Gmail account to manage emails for the Final Static project. As a follow-up, I am going to document the steps I took to connect it with the custom domain I had newly purchased.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2022-03-31T23:18:21+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Configuring Development Environment to Build Full-Stack Dapps</title><link href="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/" rel="alternate" type="text/html" title="Configuring Development Environment to Build Full-Stack Dapps" /><published>2022-03-30T17:18:21+08:00</published><updated>2022-03-30T17:18:21+08:00</updated><id>https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp</id><content type="html" xml:base="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">&lt;p&gt;One nice thing about building full-stack applications from scratch is the flexibility. You are not limited to any one fixed set of tools, and can therefore go the pragmatic route of selecting:  &lt;br /&gt;a. What suits the job best  &lt;br /&gt;b. What you are most familiar with  &lt;br /&gt;c. A mix of the above&lt;/p&gt;
+
+&lt;p&gt;That said, because I am building my first-ever decentralized application (dapp), it would probably make more sense to reference what experienced dapp developers have already done rather than completely reinventing the wheels. With that in mind, I’ve decided to follow Nader Dabit’s &lt;a href=&quot;https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb&quot;&gt;tutorial&lt;/a&gt; to build out the skeletal structure, making minor modifications as necessary.&lt;/p&gt;
+
+&lt;p&gt;According to Nader, this is the list of tools I would need:&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Node.js version &lt;code class=&quot;highlighter-rouge&quot;&gt;16.14.0&lt;/code&gt; or greater&lt;/li&gt;
+  &lt;li&gt;MetaMask digital wallet installed as a browser extension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;the-stack&quot;&gt;The Stack:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Web application framework - Next.js&lt;/li&gt;
+  &lt;li&gt;Solidity development environment - Hardhat&lt;/li&gt;
+  &lt;li&gt;File storage - IPFS&lt;/li&gt;
+  &lt;li&gt;Ethereum web client library - Ethers.js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And just to avoid ambiguity, I should also list the below.&lt;/p&gt;
+
+&lt;h3 id=&quot;operating-system&quot;&gt;Operating System:&lt;/h3&gt;
+&lt;p&gt;macOS (This is not a requirement at all. It just happens to be what I primarily use as a hybrid app developer.)&lt;/p&gt;
+
+&lt;p&gt;Now, time to jump right in!&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrading-nodejs&quot;&gt;Upgrading Node.js&lt;/h2&gt;
+
+&lt;p&gt;A quick version check on Terminal showed that I needed a newer Node installation.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;v12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;13.0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Since I already had Homebrew installed, at first I figured I would just upgrade Node via Homebrew.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;doctor&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cleanup&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upgrade&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;R&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;local&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;postinstall&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;But then as I was troubleshooting some errors, I came across several articles which pointed out that nvm might be a more suitable choice for my project. For example, this &lt;a href=&quot;https://heynode.com/tutorial/install-nodejs-locally-nvm/&quot;&gt;article&lt;/a&gt; said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Using nvm (Node.js Version Manager) makes it easier to install and manage multiple versions of Node.js on a single local environment. Even if you only need a single version of Node.js right now, we still recommend using nvm because it allows you to switch between different versions of Node (depending on the requirements of your project) with minimal hassle.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So I went ahead and installed nvm locally.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uninstall&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvm&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Terminal had to be restarted afterwards.&lt;/p&gt;
+
+&lt;p&gt;Then I used the newly installed nvm to install Node.js once again.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;nvm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;installing-metamask-extension-for-chrome&quot;&gt;Installing MetaMask Extension for Chrome&lt;/h2&gt;
+
+&lt;h3 id=&quot;what-is-metamask&quot;&gt;What is MetaMask&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralized applications (dapps).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/30/final-static_dev-environment_01.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/30/final-static_dev-environment_02.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/30/final-static_dev-environment_03.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the next post, I will proceed to create a new application with Next.js.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">The crucial process of getting the necessary tools in place and up-to-date before building.</summary></entry><entry><title type="html">How to Hook Up Custom Domain Emails to Free Gmail Account</title><link href="https://kathy.life/final-static/set-up-custom-domain-emails-free/" rel="alternate" type="text/html" title="How to Hook Up Custom Domain Emails to Free Gmail Account" /><published>2022-03-26T17:18:21+08:00</published><updated>2022-03-26T17:18:21+08:00</updated><id>https://kathy.life/final-static/set-up-custom-domain-emails-free</id><content type="html" xml:base="https://kathy.life/final-static/set-up-custom-domain-emails-free/">&lt;p&gt;In the previous blog post, I had signed up for a free Gmail account to manage emails for the Final Static project. As a follow-up, I am going to document the steps I took to connect it with the custom domain I had newly purchased.&lt;/p&gt;
 
 &lt;p&gt;Under this setup, I would essentially enjoy all the free services that come with a Gmail account (including 15 GB of cloud storage), while having a professional customer-facing email address that ends with the custom domain.&lt;/p&gt;
 
@@ -301,6 +376,4 @@
 
 &lt;p&gt;Like #3 though, go ahead regardless. After all, the priority here is to defeat the pandemic. Besides, just as in normal times, a product for everyone is a product for no one.&lt;/p&gt;
 
-&lt;p&gt;5. What are some financing options? Whilst I don’t recommend profiting off of commercializing anti-COVID solutions, there are quite a few funding streams that will help accelerate the realization of your social missions. (Just watch out for scams.)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.</summary></entry><entry><title type="html">Drones</title><link href="https://kathy.life/blog/drones/" rel="alternate" type="text/html" title="Drones" /><published>2020-03-25T04:04:21+08:00</published><updated>2020-03-25T04:04:21+08:00</updated><id>https://kathy.life/blog/drones</id><content type="html" xml:base="https://kathy.life/blog/drones/">&lt;p&gt;Sometimes we are like drones. Bringing others down won’t make you fly higher.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Sometimes we are like drones. Bringing others down won’t make you fly higher.</summary></entry><entry><title type="html">Level Up</title><link href="https://kathy.life/blog/level-up/" rel="alternate" type="text/html" title="Level Up" /><published>2020-03-25T02:55:21+08:00</published><updated>2020-03-25T02:55:21+08:00</updated><id>https://kathy.life/blog/level-up</id><content type="html" xml:base="https://kathy.life/blog/level-up/">&lt;p&gt;We will have leveled up when this is all over.&lt;/p&gt;
-
-&lt;p&gt;It’s more than just an involuntary lockdown. Think of this period of trying times as a secret training camp — from which we will emerge stronger, more intelligent, more compassionate, and with slightly longer hair.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">We will have leveled up when this is all over.</summary></entry></feed>
+&lt;p&gt;5. What are some financing options? Whilst I don’t recommend profiting off of commercializing anti-COVID solutions, there are quite a few funding streams that will help accelerate the realization of your social missions. (Just watch out for scams.)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.</summary></entry><entry><title type="html">Drones</title><link href="https://kathy.life/blog/drones/" rel="alternate" type="text/html" title="Drones" /><published>2020-03-25T04:04:21+08:00</published><updated>2020-03-25T04:04:21+08:00</updated><id>https://kathy.life/blog/drones</id><content type="html" xml:base="https://kathy.life/blog/drones/">&lt;p&gt;Sometimes we are like drones. Bringing others down won’t make you fly higher.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Sometimes we are like drones. Bringing others down won’t make you fly higher.</summary></entry></feed>

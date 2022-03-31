@@ -104,6 +104,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/final-static/set-up-custom-domain-emails-free/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Configuring Development Environment to Build Full-Stack Dapps",
+        "excerpt":"One nice thing about building full-stack applications from scratch is the flexibility. You are not limited to any one fixed set of tools, and can therefore go the pragmatic route of selecting: a. What suits the job best b. What you are most familiar with c. A mix of the...","categories": ["final-static"],
+        "tags": [],
+        "url": "https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],

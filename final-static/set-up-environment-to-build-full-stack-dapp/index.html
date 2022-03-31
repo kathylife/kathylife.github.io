@@ -1,0 +1,399 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Configuring Development Environment to Build Full-Stack Dapps - Kathy’s Blog</title>
+<meta name="description" content="The crucial process of getting the necessary tools in place and up-to-date before building. ">
+
+
+  <meta name="author" content="Kathy Li">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Kathy's Blog">
+<meta property="og:title" content="Configuring Development Environment to Build Full-Stack Dapps">
+<meta property="og:url" content="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">
+
+
+  <meta property="og:description" content="The crucial process of getting the necessary tools in place and up-to-date before building. ">
+
+
+
+  <meta property="og:image" content="https://kathy.life/assets/images/2022/03/30/final-static_dev-environment_cover.png">
+
+
+
+  <meta name="twitter:site" content="@kathfinder">
+  <meta name="twitter:title" content="Configuring Development Environment to Build Full-Stack Dapps">
+  <meta name="twitter:description" content="The crucial process of getting the necessary tools in place and up-to-date before building. ">
+  <meta name="twitter:url" content="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://kathy.life/assets/images/2022/03/30/final-static_dev-environment_cover.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2022-03-30T17:18:21+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Kathy Li",
+      "url": "https://kathy.life/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kathy's Blog Feed">
+<link rel="shortcut icon" type="image/png" href="/favicon.png"
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYTZ6B9CWZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GYTZ6B9CWZ', { 'anonymize_ip': false});
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Kathy's Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/final-static/" >Project NFT Inception</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://kathy.li" >Website Home</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Configuring Development Environment to Build Full-Stack Dapps">
+    <meta itemprop="description" content="The crucial process of getting the necessary tools in place and up-to-date before building.">
+    <meta itemprop="datePublished" content="2022-03-30T17:18:21+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Configuring Development Environment to Build Full-Stack Dapps
+</h1>
+          
+          
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></strong> <time datetime="2022-03-30T17:18:21+08:00">March 30, 2022</time></p>
+          
+
+        </header>
+        <br>
+        <br>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>One nice thing about building full-stack applications from scratch is the flexibility. You are not limited to any one fixed set of tools, and can therefore go the pragmatic route of selecting:  <br />a. What suits the job best  <br />b. What you are most familiar with  <br />c. A mix of the above</p>
+
+<p>That said, because I am building my first-ever decentralized application (dapp), it would probably make more sense to reference what experienced dapp developers have already done rather than completely reinventing the wheels. With that in mind, I’ve decided to follow Nader Dabit’s <a href="https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb">tutorial</a> to build out the skeletal structure, making minor modifications as necessary.</p>
+
+<p>According to Nader, this is the list of tools I would need:</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Node.js version <code class="highlighter-rouge">16.14.0</code> or greater</li>
+  <li>MetaMask digital wallet installed as a browser extension</li>
+</ul>
+
+<h3 id="the-stack">The Stack:</h3>
+<ul>
+  <li>Web application framework - Next.js</li>
+  <li>Solidity development environment - Hardhat</li>
+  <li>File storage - IPFS</li>
+  <li>Ethereum web client library - Ethers.js</li>
+</ul>
+
+<p>And just to avoid ambiguity, I should also list the below.</p>
+
+<h3 id="operating-system">Operating System:</h3>
+<p>macOS (This is not a requirement at all. It just happens to be what I primarily use as a hybrid app developer.)</p>
+
+<p>Now, time to jump right in!</p>
+
+<h2 id="upgrading-nodejs">Upgrading Node.js</h2>
+
+<p>A quick version check on Terminal showed that I needed a newer Node installation.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">node</span> <span class="o">-</span><span class="nx">v</span>
+<span class="nx">v12</span><span class="p">.</span><span class="mf">13.0</span></code></pre></figure>
+
+<p>Since I already had Homebrew installed, at first I figured I would just upgrade Node via Homebrew.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">brew</span> <span class="nx">update</span>
+<span class="nx">brew</span> <span class="nx">doctor</span>
+<span class="nx">brew</span> <span class="nx">cleanup</span>
+<span class="nx">brew</span> <span class="nx">upgrade</span> <span class="nx">node</span>
+<span class="nx">brew</span> <span class="nx">link</span> <span class="o">--</span><span class="nx">overwrite</span> <span class="nx">node</span>
+<span class="nx">sudo</span> <span class="nx">chown</span> <span class="o">-</span><span class="nx">R</span> <span class="nx">$</span><span class="p">(</span><span class="nx">whoami</span><span class="p">)</span> <span class="o">/</span><span class="nx">usr</span><span class="o">/</span><span class="nx">local</span>
+<span class="nx">brew</span> <span class="nx">postinstall</span> <span class="nx">node</span></code></pre></figure>
+
+<p>But then as I was troubleshooting some errors, I came across several articles which pointed out that nvm might be a more suitable choice for my project. For example, this <a href="https://heynode.com/tutorial/install-nodejs-locally-nvm/">article</a> said:</p>
+
+<blockquote>
+  <p>Using nvm (Node.js Version Manager) makes it easier to install and manage multiple versions of Node.js on a single local environment. Even if you only need a single version of Node.js right now, we still recommend using nvm because it allows you to switch between different versions of Node (depending on the requirements of your project) with minimal hassle.</p>
+</blockquote>
+
+<p>So I went ahead and installed nvm locally.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">brew</span> <span class="nx">uninstall</span> <span class="nx">node</span>
+<span class="nx">brew</span> <span class="nx">install</span> <span class="nx">nvm</span></code></pre></figure>
+
+<p>Terminal had to be restarted afterwards.</p>
+
+<p>Then I used the newly installed nvm to install Node.js once again.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">nvm</span> <span class="nx">install</span> <span class="nx">node</span></code></pre></figure>
+
+<h2 id="installing-metamask-extension-for-chrome">Installing MetaMask Extension for Chrome</h2>
+
+<h3 id="what-is-metamask">What is MetaMask</h3>
+
+<blockquote>
+  <p>MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralized applications (dapps).</p>
+</blockquote>
+
+<p><img src="/assets/images/2022/03/30/final-static_dev-environment_01.png" alt="image-center" class="align-center" /></p>
+
+<p><img src="/assets/images/2022/03/30/final-static_dev-environment_02.png" alt="image-center" class="align-center" /></p>
+
+<p><img src="/assets/images/2022/03/30/final-static_dev-environment_03.png" alt="image-center" class="align-center" /></p>
+
+<p>In the next post, I will proceed to create a new application with Next.js.</p>
+
+        
+      </section>
+
+      <div>
+      
+      
+      <h2 class="page__meta"><strong><i class="fas fa-fw fa-list-alt" aria-hidden="true"></i></strong>
+      Categories:
+      
+      <a href="/final-static"> final-static</a>
+      
+      </h2>
+      
+      
+      </div>
+
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        <!--
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-03-30T17:18:21+08:00">March 30, 2022</time></p>
+        
+        -->
+      </footer>
+
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/final-static/set-up-custom-domain-emails-free/" class="pagination--pager" title="How to Hook Up Custom Domain Emails to Free Gmail Account
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Find me on:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/kathfinder" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://facebook.com/inventgineer" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/kathfinder" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://medium.com/@kathyli" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/kathyli" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+        
+      
+    
+
+    <!--<li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>-->
+  </ul>
+</div>
+
+<div class="page__footer-copyright"><p>&copy; 2022 Kathy's Blog by <a href='https://kathy.li'>Kathy Li</a>.</p>
+    <small>Powered by coffee, <a href='https://jekyllrb.com/' target='_blank'>Jekyll</a>, and the <a href='https://mademistakes.com/work/minimal-mistakes-jekyll-theme/' target='_blank'>Minimal Mistakes</a> theme.</small>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
