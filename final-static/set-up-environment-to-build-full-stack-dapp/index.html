@@ -20,25 +20,25 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Kathy's Blog">
 <meta property="og:title" content="Configuring Development Environment to Build Full-Stack Dapps">
-<meta property="og:url" content="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">
+<meta property="og:url" content="http://localhost:4000/final-static/set-up-environment-to-build-full-stack-dapp/">
 
 
   <meta property="og:description" content="The crucial process of getting the necessary tools in place and up-to-date before building. ">
 
 
 
-  <meta property="og:image" content="https://kathy.life/assets/images/2022/03/30/final-static_dev-environment_cover.png">
+  <meta property="og:image" content="http://localhost:4000/assets/images/2022/03/30/final-static_dev-environment_cover.png">
 
 
 
   <meta name="twitter:site" content="@kathfinder">
   <meta name="twitter:title" content="Configuring Development Environment to Build Full-Stack Dapps">
   <meta name="twitter:description" content="The crucial process of getting the necessary tools in place and up-to-date before building. ">
-  <meta name="twitter:url" content="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">
+  <meta name="twitter:url" content="http://localhost:4000/final-static/set-up-environment-to-build-full-stack-dapp/">
 
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://kathy.life/assets/images/2022/03/30/final-static_dev-environment_cover.png">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/2022/03/30/final-static_dev-environment_cover.png">
   
 
   
@@ -56,7 +56,7 @@
   
 
 
-<link rel="canonical" href="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">
+<link rel="canonical" href="http://localhost:4000/final-static/set-up-environment-to-build-full-stack-dapp/">
 
 
 
@@ -67,7 +67,7 @@
     
       "@type": "Person",
       "name": "Kathy Li",
-      "url": "https://kathy.life/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -230,18 +230,18 @@
 
 <p>A quick version check on Terminal showed that I needed a newer Node installation.</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">node</span> <span class="o">-</span><span class="nx">v</span>
-<span class="nx">v12</span><span class="p">.</span><span class="mf">13.0</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">node -v
+v12.13.0</span></code></pre></figure>
 
 <p>Since I already had Homebrew installed, at first I figured I would just upgrade Node via Homebrew.</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">brew</span> <span class="nx">update</span>
-<span class="nx">brew</span> <span class="nx">doctor</span>
-<span class="nx">brew</span> <span class="nx">cleanup</span>
-<span class="nx">brew</span> <span class="nx">upgrade</span> <span class="nx">node</span>
-<span class="nx">brew</span> <span class="nx">link</span> <span class="o">--</span><span class="nx">overwrite</span> <span class="nx">node</span>
-<span class="nx">sudo</span> <span class="nx">chown</span> <span class="o">-</span><span class="nx">R</span> <span class="nx">$</span><span class="p">(</span><span class="nx">whoami</span><span class="p">)</span> <span class="o">/</span><span class="nx">usr</span><span class="o">/</span><span class="nx">local</span>
-<span class="nx">brew</span> <span class="nx">postinstall</span> <span class="nx">node</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">brew update
+brew doctor
+brew cleanup
+brew upgrade node
+brew link --overwrite node
+</span><span class="gp">sudo chown -R $</span><span class="o">(</span><span class="nb">whoami</span><span class="o">)</span> /usr/local
+<span class="go">brew postinstall node</span></code></pre></figure>
 
 <p>But then as I was troubleshooting some errors, I came across several articles which pointed out that nvm might be a more suitable choice for my project. For example, this <a href="https://heynode.com/tutorial/install-nodejs-locally-nvm/">article</a> said:</p>
 
@@ -251,14 +251,14 @@
 
 <p>So I went ahead and installed nvm locally.</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">brew</span> <span class="nx">uninstall</span> <span class="nx">node</span>
-<span class="nx">brew</span> <span class="nx">install</span> <span class="nx">nvm</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">brew uninstall node
+brew install nvm</span></code></pre></figure>
 
 <p>Terminal had to be restarted afterwards.</p>
 
 <p>Then I used the newly installed nvm to install Node.js once again.</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">nvm</span> <span class="nx">install</span> <span class="nx">node</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">nvm install node</span></code></pre></figure>
 
 <h2 id="installing-metamask-extension-for-chrome">Installing MetaMask Extension for Chrome</h2>
 
@@ -317,7 +317,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/final-static/dapp-project-setup/" class="pagination--pager" title="Dapp Project Setup
+">Next</a>
     
   </nav>
 

@@ -1,4 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2022-03-31T23:18:21+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Configuring Development Environment to Build Full-Stack Dapps</title><link href="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/" rel="alternate" type="text/html" title="Configuring Development Environment to Build Full-Stack Dapps" /><published>2022-03-30T17:18:21+08:00</published><updated>2022-03-30T17:18:21+08:00</updated><id>https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp</id><content type="html" xml:base="https://kathy.life/final-static/set-up-environment-to-build-full-stack-dapp/">&lt;p&gt;One nice thing about building full-stack applications from scratch is the flexibility. You are not limited to any one fixed set of tools, and can therefore go the pragmatic route of selecting:  &lt;br /&gt;a. What suits the job best  &lt;br /&gt;b. What you are most familiar with  &lt;br /&gt;c. A mix of the above&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-03T00:43:10+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Dapp Project Setup</title><link href="http://localhost:4000/final-static/dapp-project-setup/" rel="alternate" type="text/html" title="Dapp Project Setup" /><published>2022-04-02T17:18:21+08:00</published><updated>2022-04-02T17:18:21+08:00</updated><id>http://localhost:4000/final-static/dapp-project-setup</id><content type="html" xml:base="http://localhost:4000/final-static/dapp-project-setup/">&lt;p&gt;In the previous post I went through the steps to configure my local development environment, so now would be a good time to start creating the project skeleton.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-a-nextjs-project&quot;&gt;Creating a Next.js project&lt;/h2&gt;
+
+&lt;p&gt;As a memory refresher:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Next.js is an open-source web development framework built on top of Node.js, enabling React-based web application functionalities such as server-side rendering and generating static websites.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;React is an open-source front-end JavaScript library that is typically used to build web applications and their user interfaces rendered in the client’s browser.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On Terminal, I first changed into the directory where I wanted the new project to be housed. Feel free to replace &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Development&lt;/code&gt; with your preferred directory.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;cd ~/Development&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then I ran the following command to create an app named &lt;code class=&quot;highlighter-rouge&quot;&gt;final-static&lt;/code&gt;. All of the project files would be generated inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;final-static&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;npx create-next-app final-static&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you didn’t already have it, you would be asked to install the &lt;code class=&quot;highlighter-rouge&quot;&gt;create-next-app&lt;/code&gt; package first.&lt;/p&gt;
+
+&lt;p&gt;When the command completed, I changed into the newly created project directory.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;cd final-static&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The next step would be to install the dependencies using a package manager like &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;pnpm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I tried both &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn&lt;/code&gt;, and it appeared that yarn worked better for my particular setup. Feel free to pick whichever works better for you:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;npm install ethers hardhat @nomiclabs/hardhat-waffle \
+ethereum-waffle chai @nomiclabs/hardhat-ethers \
+web3modal @openzeppelin/contracts ipfs-http-client \
+axios&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;yarn add ethers hardhat @nomiclabs/hardhat-waffle \
+ethereum-waffle chai @nomiclabs/hardhat-ethers \
+web3modal @openzeppelin/contracts ipfs-http-client \
+axios&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You might also need to follow the prompts to troubleshoot any warnings or errors.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-tailwind-css&quot;&gt;Setting up Tailwind CSS&lt;/h2&gt;
+
+&lt;p&gt;When it comes to customizing web-based user interfaces, I like the full control you get with Cascading Style Sheets (CSS), but honestly dread having to put in the sometimes counter-intuitive work just to get things to look good enough (let alone perfect).&lt;/p&gt;
+
+&lt;p&gt;If you are in the same boat as far as CSS is concerned, then you might also find Tailwind CSS helpful.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework that gives you the building blocks you need to add styling and create good-looking designs the easy way.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here’s the command I used to install the Tailwind dependencies:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;yarn add tailwindcss@latest postcss@latest autoprefixer@latest&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then, in order to create the configuration files needed for Tailwind to work with Next.js (namely, &lt;code class=&quot;highlighter-rouge&quot;&gt;tailwind.config.js&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;postcss.config.js&lt;/code&gt;), I ran:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;npx tailwindcss init -p&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;With said configuration files generated, I was able to make some preliminary updates.&lt;/p&gt;
+
+&lt;p&gt;To add custom template content paths in &lt;code class=&quot;highlighter-rouge&quot;&gt;tailwind.config.js&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// tailwind.config.js&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./pages/**/*.{js,ts,jsx,tsx}&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./components/**/*.{js,ts,jsx,tsx}&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The next thing I did was replacing the code in &lt;code class=&quot;highlighter-rouge&quot;&gt;styles/globals.css&lt;/code&gt; with the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;tailwind&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;tailwind&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;components&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;tailwind&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;utilities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;configuring-hardhat&quot;&gt;Configuring Hardhat&lt;/h2&gt;
+
+&lt;p&gt;One distinctive characteristic of decentralized applications (dapps) is the use of blockchain technology with smart contract functionality.&lt;/p&gt;
+
+&lt;p&gt;The blockchain platform of choice here is Ethereum. To support this, I went ahead and set up Hardhat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hardhat is a Solidity development environment to compile, deploy, test, and debug Ethereum software.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Solidity is an object-oriented programming language for implementing smart contracts on various blockchain platforms — most notably — Ethereum.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I started by initializing a new Hardhat development environment from the root of the &lt;code class=&quot;highlighter-rouge&quot;&gt;/final-static&lt;/code&gt; project:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;npx hardhat&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;At the prompt, I selected:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;? What do you want to do?
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;Create a basic sample project&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When asked about the project root, I went with the default. Your directories would be different.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;gp&quot;&gt;? Hardhat project root: &amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;/Users/kathy/Development/final-static&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;After saying “yes” to adding a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;, I got a possibly git-related error:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;Error HH16: The directory /Users/kathy/Development/final-static contains files that could conflict:
+
+  README.md
+
+Either try using a new directory, or remove the files listed above.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;And therefore I deleted &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; and ran the initialization again.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;rm README.md
+npx hardhat&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When the initialization completed, I quickly checked to make sure the following files and folders were successfully generated in the project root directory:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hardhat.config.js&lt;/code&gt; - The entirety of your Hardhat setup (i.e. your config, plugins, and custom tasks) is contained in this file.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/scripts&lt;/code&gt; - A folder containing a script named sample-script.js that will deploy your smart contract when executed
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/test&lt;/code&gt; - A folder containing an example testing script
+&lt;code class=&quot;highlighter-rouge&quot;&gt;/contracts&lt;/code&gt; - A folder holding an example Solidity smart contract&lt;/p&gt;
+
+&lt;p&gt;Next, per Nader’s tutorial, I updated the configuration at &lt;code class=&quot;highlighter-rouge&quot;&gt;hardhat.config.js&lt;/code&gt; by replacing the auto-generated code with the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// hardhat.config.js&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@nomiclabs/hardhat-waffle&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;defaultNetwork&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hardhat&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;networks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;hardhat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;chainId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1337&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//  unused configuration commented out for now&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//  mumbai: {&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//    url: &quot;https://rpc-mumbai.maticvigil.com&quot;,&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//    accounts: [process.env.privateKey]&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//  }&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;solidity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;0.8.4&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;settings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;optimizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;enabled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;runs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The above configured the local Hardhat development environment as well as the Mumbai testnet (commented out for now until I got ready for the test).&lt;/p&gt;
+
+&lt;p&gt;They are both Polygon (formerly Matic) networks.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Polygon makes Web3 more accessible. It is a decentralized Ethereum scaling platform that enables developers to build scalable user-friendly dapps with low transaction fees.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let’s break things up here for now. In the next post, I will proceed to set up smart contracts.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Time to start building.</summary></entry><entry><title type="html">Configuring Development Environment to Build Full-Stack Dapps</title><link href="http://localhost:4000/final-static/set-up-environment-to-build-full-stack-dapp/" rel="alternate" type="text/html" title="Configuring Development Environment to Build Full-Stack Dapps" /><published>2022-03-30T17:18:21+08:00</published><updated>2022-03-30T17:18:21+08:00</updated><id>http://localhost:4000/final-static/set-up-environment-to-build-full-stack-dapp</id><content type="html" xml:base="http://localhost:4000/final-static/set-up-environment-to-build-full-stack-dapp/">&lt;p&gt;One nice thing about building full-stack applications from scratch is the flexibility. You are not limited to any one fixed set of tools, and can therefore go the pragmatic route of selecting:  &lt;br /&gt;a. What suits the job best  &lt;br /&gt;b. What you are most familiar with  &lt;br /&gt;c. A mix of the above&lt;/p&gt;
 
 &lt;p&gt;That said, because I am building my first-ever decentralized application (dapp), it would probably make more sense to reference what experienced dapp developers have already done rather than completely reinventing the wheels. With that in mind, I’ve decided to follow Nader Dabit’s &lt;a href=&quot;https://dev.to/edge-and-node/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb&quot;&gt;tutorial&lt;/a&gt; to build out the skeletal structure, making minor modifications as necessary.&lt;/p&gt;
 
@@ -29,18 +196,18 @@
 
 &lt;p&gt;A quick version check on Terminal showed that I needed a newer Node installation.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;v12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;13.0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;node -v
+v12.13.0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Since I already had Homebrew installed, at first I figured I would just upgrade Node via Homebrew.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;doctor&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cleanup&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;upgrade&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;chown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;R&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;local&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;postinstall&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;brew update
+brew doctor
+brew cleanup
+brew upgrade node
+brew link --overwrite node
+&lt;/span&gt;&lt;span class=&quot;gp&quot;&gt;sudo chown -R $&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;whoami&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; /usr/local
+&lt;span class=&quot;go&quot;&gt;brew postinstall node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;But then as I was troubleshooting some errors, I came across several articles which pointed out that nvm might be a more suitable choice for my project. For example, this &lt;a href=&quot;https://heynode.com/tutorial/install-nodejs-locally-nvm/&quot;&gt;article&lt;/a&gt; said:&lt;/p&gt;
 
@@ -50,14 +217,14 @@
 
 &lt;p&gt;So I went ahead and installed nvm locally.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;uninstall&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;brew&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nvm&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;brew uninstall node
+brew install nvm&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Terminal had to be restarted afterwards.&lt;/p&gt;
 
 &lt;p&gt;Then I used the newly installed nvm to install Node.js once again.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;nvm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-terminal&quot; data-lang=&quot;terminal&quot;&gt;&lt;span class=&quot;go&quot;&gt;nvm install node&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;installing-metamask-extension-for-chrome&quot;&gt;Installing MetaMask Extension for Chrome&lt;/h2&gt;
 
@@ -73,7 +240,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/30/final-static_dev-environment_03.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In the next post, I will proceed to create a new application with Next.js.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">The crucial process of getting the necessary tools in place and up-to-date before building.</summary></entry><entry><title type="html">How to Hook Up Custom Domain Emails to Free Gmail Account</title><link href="https://kathy.life/final-static/set-up-custom-domain-emails-free/" rel="alternate" type="text/html" title="How to Hook Up Custom Domain Emails to Free Gmail Account" /><published>2022-03-26T17:18:21+08:00</published><updated>2022-03-26T17:18:21+08:00</updated><id>https://kathy.life/final-static/set-up-custom-domain-emails-free</id><content type="html" xml:base="https://kathy.life/final-static/set-up-custom-domain-emails-free/">&lt;p&gt;In the previous blog post, I had signed up for a free Gmail account to manage emails for the Final Static project. As a follow-up, I am going to document the steps I took to connect it with the custom domain I had newly purchased.&lt;/p&gt;
+&lt;p&gt;In the next post, I will proceed to create a new application with Next.js.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">The crucial process of getting the necessary tools in place and up-to-date before building.</summary></entry><entry><title type="html">How to Hook Up Custom Domain Emails to Free Gmail Account</title><link href="http://localhost:4000/final-static/set-up-custom-domain-emails-free/" rel="alternate" type="text/html" title="How to Hook Up Custom Domain Emails to Free Gmail Account" /><published>2022-03-26T17:18:21+08:00</published><updated>2022-03-26T17:18:21+08:00</updated><id>http://localhost:4000/final-static/set-up-custom-domain-emails-free</id><content type="html" xml:base="http://localhost:4000/final-static/set-up-custom-domain-emails-free/">&lt;p&gt;In the previous blog post, I had signed up for a free Gmail account to manage emails for the Final Static project. As a follow-up, I am going to document the steps I took to connect it with the custom domain I had newly purchased.&lt;/p&gt;
 
 &lt;p&gt;Under this setup, I would essentially enjoy all the free services that come with a Gmail account (including 15 GB of cloud storage), while having a professional customer-facing email address that ends with the custom domain.&lt;/p&gt;
 
@@ -258,7 +425,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_22-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As things stand, the first edition of this guide has been one of my most viewed Medium articles thus far.</summary></entry><entry><title type="html">If You Name It</title><link href="https://kathy.life/final-static/if-you-name-it/" rel="alternate" type="text/html" title="If You Name It" /><published>2022-03-23T17:33:21+08:00</published><updated>2022-03-23T17:33:21+08:00</updated><id>https://kathy.life/final-static/if-you-name-it</id><content type="html" xml:base="https://kathy.life/final-static/if-you-name-it/">&lt;p&gt;When we give our pet project a name and identity, we become that much more attached to it and, in turn, may just have a higher likelihood of seeing it through.&lt;/p&gt;
+&lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As things stand, the first edition of this guide has been one of my most viewed Medium articles thus far.</summary></entry><entry><title type="html">If You Name It</title><link href="http://localhost:4000/final-static/if-you-name-it/" rel="alternate" type="text/html" title="If You Name It" /><published>2022-03-23T17:33:21+08:00</published><updated>2022-03-23T17:33:21+08:00</updated><id>http://localhost:4000/final-static/if-you-name-it</id><content type="html" xml:base="http://localhost:4000/final-static/if-you-name-it/">&lt;p&gt;When we give our pet project a name and identity, we become that much more attached to it and, in turn, may just have a higher likelihood of seeing it through.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-new-project&quot;&gt;The New Project&lt;/h2&gt;
 
@@ -325,7 +492,7 @@
 
 &lt;p&gt;&lt;small&gt;**Google Domains Out of Beta Refer-a-Friend Discount Terms &amp;amp; Conditions&lt;/small&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;small&gt;Valid for 25% discount, with a maximum redemption value of $10 USD (or the local currency equivalent), against a new or transfer in domain registration price from eligible top level domains on Google Domains. Discount pricing valid for the initial purchase term for a single domain registration only. Renewal pricing subject to change. Limit one discount per domain name registration per customer. Google reserves the right to cancel, suspend or modify part of this offer at any time without notice, for any reason in its sole discretion. Promotional code must be automatically or manually applied, is non-transferable and has no cash value. To redeem the offer, you must have or activate a Google account. Offer ends March 29, 2022 or while supplies last.&lt;/small&gt;&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Then it's all official.</summary></entry><entry><title type="html">Street Signs</title><link href="https://kathy.life/blog/street-signs/" rel="alternate" type="text/html" title="Street Signs" /><published>2022-01-28T05:33:21+08:00</published><updated>2022-01-28T05:33:21+08:00</updated><id>https://kathy.life/blog/street-signs</id><content type="html" xml:base="https://kathy.life/blog/street-signs/">&lt;p&gt;&lt;img src=&quot;/assets/images/2022/01/28/street_signs.jpg&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Valid for 25% discount, with a maximum redemption value of $10 USD (or the local currency equivalent), against a new or transfer in domain registration price from eligible top level domains on Google Domains. Discount pricing valid for the initial purchase term for a single domain registration only. Renewal pricing subject to change. Limit one discount per domain name registration per customer. Google reserves the right to cancel, suspend or modify part of this offer at any time without notice, for any reason in its sole discretion. Promotional code must be automatically or manually applied, is non-transferable and has no cash value. To redeem the offer, you must have or activate a Google account. Offer ends March 29, 2022 or while supplies last.&lt;/small&gt;&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Then it's all official.</summary></entry><entry><title type="html">Street Signs</title><link href="http://localhost:4000/blog/street-signs/" rel="alternate" type="text/html" title="Street Signs" /><published>2022-01-28T05:33:21+08:00</published><updated>2022-01-28T05:33:21+08:00</updated><id>http://localhost:4000/blog/street-signs</id><content type="html" xml:base="http://localhost:4000/blog/street-signs/">&lt;p&gt;&lt;img src=&quot;/assets/images/2022/01/28/street_signs.jpg&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;small&gt;[Kingston Street, Causeway Bay, 2022]&lt;/small&gt;&lt;/p&gt;
 
@@ -343,11 +510,11 @@
 
 &lt;p&gt;Camera: Rollei 35 S&lt;/p&gt;
 
-&lt;p&gt;Film: Fujifilm Superia X-TRA 400 (expired in April, 2018)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">The street signs in Hong Kong — as compact as they tend to be in size — subtly pack a lot of useful information.</summary></entry><entry><title type="html">Milkweed</title><link href="https://kathy.life/blog/milkweed/" rel="alternate" type="text/html" title="Milkweed" /><published>2021-10-12T03:33:21+08:00</published><updated>2021-10-12T03:33:21+08:00</updated><id>https://kathy.life/blog/milkweed</id><content type="html" xml:base="https://kathy.life/blog/milkweed/">&lt;p&gt;Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.&lt;/p&gt;
+&lt;p&gt;Film: Fujifilm Superia X-TRA 400 (expired in April, 2018)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">The street signs in Hong Kong — as compact as they tend to be in size — subtly pack a lot of useful information.</summary></entry><entry><title type="html">Milkweed</title><link href="http://localhost:4000/blog/milkweed/" rel="alternate" type="text/html" title="Milkweed" /><published>2021-10-12T03:33:21+08:00</published><updated>2021-10-12T03:33:21+08:00</updated><id>http://localhost:4000/blog/milkweed</id><content type="html" xml:base="http://localhost:4000/blog/milkweed/">&lt;p&gt;Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.&lt;/p&gt;
 
-&lt;p&gt;Be yourself, and the right people will come by at some point or another. Those who are not meant to be in your life are simply that.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.</summary></entry><entry><title type="html">Exit</title><link href="https://kathy.life/blog/exit/" rel="alternate" type="text/html" title="Exit" /><published>2021-09-10T23:03:21+08:00</published><updated>2021-09-10T23:03:21+08:00</updated><id>https://kathy.life/blog/exit</id><content type="html" xml:base="https://kathy.life/blog/exit/">&lt;p&gt;Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.</summary></entry><entry><title type="html">History</title><link href="https://kathy.life/blog/history/" rel="alternate" type="text/html" title="History" /><published>2020-12-13T03:33:21+08:00</published><updated>2020-12-13T03:33:21+08:00</updated><id>https://kathy.life/blog/history</id><content type="html" xml:base="https://kathy.life/blog/history/">&lt;p&gt;History has repeatedly told us not to repeat it.&lt;/p&gt;
+&lt;p&gt;Be yourself, and the right people will come by at some point or another. Those who are not meant to be in your life are simply that.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Most milkweed flowers are poisonous to humans and pets, but at the same time can be a great nectar source for pollinators like butterflies and honeybees — *if* they don’t get trapped inside and die.</summary></entry><entry><title type="html">Exit</title><link href="http://localhost:4000/blog/exit/" rel="alternate" type="text/html" title="Exit" /><published>2021-09-10T23:03:21+08:00</published><updated>2021-09-10T23:03:21+08:00</updated><id>http://localhost:4000/blog/exit</id><content type="html" xml:base="http://localhost:4000/blog/exit/">&lt;p&gt;Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Getting a rejection is like taking an early exit on the freeway. You are not necessarily changing your destination; perhaps you are just taking a different route to get there.</summary></entry><entry><title type="html">History</title><link href="http://localhost:4000/blog/history/" rel="alternate" type="text/html" title="History" /><published>2020-12-13T03:33:21+08:00</published><updated>2020-12-13T03:33:21+08:00</updated><id>http://localhost:4000/blog/history</id><content type="html" xml:base="http://localhost:4000/blog/history/">&lt;p&gt;History has repeatedly told us not to repeat it.&lt;/p&gt;
 
-&lt;p&gt;We have been historically terrible at learning from what history tells us.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">History has repeatedly told us not to repeat it.</summary></entry><entry><title type="html">Respect</title><link href="https://kathy.life/blog/respect/" rel="alternate" type="text/html" title="Respect" /><published>2020-11-10T01:57:21+08:00</published><updated>2020-11-10T01:57:21+08:00</updated><id>https://kathy.life/blog/respect</id><content type="html" xml:base="https://kathy.life/blog/respect/">&lt;p&gt;Part of my ethos is to treat everyone respectfully, regardless of whether or not they are successful.&lt;/p&gt;
+&lt;p&gt;We have been historically terrible at learning from what history tells us.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">History has repeatedly told us not to repeat it.</summary></entry><entry><title type="html">Respect</title><link href="http://localhost:4000/blog/respect/" rel="alternate" type="text/html" title="Respect" /><published>2020-11-10T01:57:21+08:00</published><updated>2020-11-10T01:57:21+08:00</updated><id>http://localhost:4000/blog/respect</id><content type="html" xml:base="http://localhost:4000/blog/respect/">&lt;p&gt;Part of my ethos is to treat everyone respectfully, regardless of whether or not they are successful.&lt;/p&gt;
 
 &lt;p&gt;I have tremendously more respect for people who:&lt;/p&gt;
 
@@ -358,7 +525,7 @@
 &lt;li&gt; set goals, failed (perhaps even more than once), and stood back up&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The 46th U.S. President-elect is one example of all of the above.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Part of my ethos is to treat everyone respectfully, regardless of whether or not they are successful.</summary></entry><entry><title type="html">Prototyping Paradigm Shift</title><link href="https://kathy.life/blog/prototyping-paradigm-shift/" rel="alternate" type="text/html" title="Prototyping Paradigm Shift" /><published>2020-04-07T01:55:21+08:00</published><updated>2020-04-07T01:55:21+08:00</updated><id>https://kathy.life/blog/prototyping-paradigm-shift</id><content type="html" xml:base="https://kathy.life/blog/prototyping-paradigm-shift/">&lt;p&gt;As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.&lt;/p&gt;
+&lt;p&gt;The 46th U.S. President-elect is one example of all of the above.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Part of my ethos is to treat everyone respectfully, regardless of whether or not they are successful.</summary></entry><entry><title type="html">Prototyping Paradigm Shift</title><link href="http://localhost:4000/blog/prototyping-paradigm-shift/" rel="alternate" type="text/html" title="Prototyping Paradigm Shift" /><published>2020-04-07T01:55:21+08:00</published><updated>2020-04-07T01:55:21+08:00</updated><id>http://localhost:4000/blog/prototyping-paradigm-shift</id><content type="html" xml:base="http://localhost:4000/blog/prototyping-paradigm-shift/">&lt;p&gt;As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.&lt;/p&gt;
 
 &lt;p&gt;Amidst the pandemic, the questions we should now be asking ourselves are:&lt;/p&gt;
 
@@ -376,4 +543,4 @@
 
 &lt;p&gt;Like #3 though, go ahead regardless. After all, the priority here is to defeat the pandemic. Besides, just as in normal times, a product for everyone is a product for no one.&lt;/p&gt;
 
-&lt;p&gt;5. What are some financing options? Whilst I don’t recommend profiting off of commercializing anti-COVID solutions, there are quite a few funding streams that will help accelerate the realization of your social missions. (Just watch out for scams.)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.</summary></entry><entry><title type="html">Drones</title><link href="https://kathy.life/blog/drones/" rel="alternate" type="text/html" title="Drones" /><published>2020-03-25T04:04:21+08:00</published><updated>2020-03-25T04:04:21+08:00</updated><id>https://kathy.life/blog/drones</id><content type="html" xml:base="https://kathy.life/blog/drones/">&lt;p&gt;Sometimes we are like drones. Bringing others down won’t make you fly higher.&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Sometimes we are like drones. Bringing others down won’t make you fly higher.</summary></entry></feed>
+&lt;p&gt;5. What are some financing options? Whilst I don’t recommend profiting off of commercializing anti-COVID solutions, there are quite a few funding streams that will help accelerate the realization of your social missions. (Just watch out for scams.)&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As someone who is actively developing a series of solutions to help fight against COVID-19, I think it’s safe to say that the global crisis presents a paradigm shift in the way we prototype.</summary></entry></feed>
