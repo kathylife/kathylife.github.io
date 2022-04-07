@@ -1,0 +1,630 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Implementing the Smart Contract - Kathy’s Blog</title>
+<meta name="description" content="Essentially the heart of the NFT marketplace. ">
+
+
+  <meta name="author" content="Kathy Li">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Kathy's Blog">
+<meta property="og:title" content="Implementing the Smart Contract">
+<meta property="og:url" content="https://kathy.life/final-static/implementing-smart-contract/">
+
+
+  <meta property="og:description" content="Essentially the heart of the NFT marketplace. ">
+
+
+
+  <meta property="og:image" content="https://kathy.life/assets/images/2022/04/05/final-static_implementing-smart-contract_cover.png">
+
+
+
+  <meta name="twitter:site" content="@kathfinder">
+  <meta name="twitter:title" content="Implementing the Smart Contract">
+  <meta name="twitter:description" content="Essentially the heart of the NFT marketplace. ">
+  <meta name="twitter:url" content="https://kathy.life/final-static/implementing-smart-contract/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://kathy.life/assets/images/2022/04/05/final-static_implementing-smart-contract_cover.png">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2022-04-05T17:18:21+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://kathy.life/final-static/implementing-smart-contract/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Kathy Li",
+      "url": "https://kathy.life/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Kathy's Blog Feed">
+<link rel="shortcut icon" type="image/png" href="/favicon.png"
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYTZ6B9CWZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GYTZ6B9CWZ', { 'anonymize_ip': false});
+</script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Kathy's Blog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/final-static/" >Project NFT Inception</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://kathy.li" >Website Home</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Implementing the Smart Contract">
+    <meta itemprop="description" content="Essentially the heart of the NFT marketplace.">
+    <meta itemprop="datePublished" content="2022-04-05T17:18:21+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Implementing the Smart Contract
+</h1>
+          
+          
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i></strong> <time datetime="2022-04-05T17:18:21+08:00">April 5, 2022</time></p>
+          
+
+        </header>
+        <br>
+        <br>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>As documented in the previous post, I built out the application skeleton which came with an auto-generated sample Solidity smart contract.</p>
+
+<blockquote>
+  <p>A smart contract is a self-executing protocol with the terms of the agreement between two parties (e.g. buyer and seller) being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network.</p>
+</blockquote>
+
+<p>With that in place, the next item on the docket would be to create Final Static’s smart contract.</p>
+
+<h2 id="coding-the-smart-contract">Coding the smart contract</h2>
+
+<p>In the <code class="highlighter-rouge">/contracts/</code> folder, there’s already a sample smart contract code file with a <code class="highlighter-rouge">.sol</code> extension. To set up our own smart contract, I created a new file named <code class="highlighter-rouge">FinalStatic.sol</code> in the same folder.</p>
+
+<p>Here’s the entirety of the file thus far:</p>
+
+<figure class="highlight"><pre><code class="language-solidity" data-lang="solidity"><span class="c1">// SPDX-License-Identifier: MIT
+</span><span class="k">pragma</span> <span class="n">solidity</span> <span class="o">^</span><span class="mf">0.8</span><span class="p">.</span><span class="mi">4</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="s">"@openzeppelin/contracts/utils/Counters.sol"</span><span class="p">;</span>
+<span class="k">import</span> <span class="s">"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol"</span><span class="p">;</span>
+<span class="k">import</span> <span class="s">"@openzeppelin/contracts/token/ERC721/ERC721.sol"</span><span class="p">;</span>
+
+<span class="k">import</span> <span class="s">"hardhat/console.sol"</span><span class="p">;</span>
+
+<span class="k">contract</span> <span class="n">FinalStatic</span> <span class="k">is</span> <span class="n">ERC721URIStorage</span>
+<span class="p">{</span>
+    <span class="k">using</span> <span class="n">Counters</span> <span class="k">for</span> <span class="n">Counters</span><span class="p">.</span><span class="n">Counter</span><span class="p">;</span>
+    <span class="n">Counters</span><span class="p">.</span><span class="n">Counter</span> <span class="k">private</span> <span class="n">_token_ids</span><span class="p">;</span>
+    <span class="n">Counters</span><span class="p">.</span><span class="n">Counter</span> <span class="k">private</span> <span class="n">_items_sold</span><span class="p">;</span>
+
+    <span class="kt">uint256</span> <span class="n">listing_price</span> <span class="o">=</span> <span class="mf">0.025</span> <span class="kc">ether</span><span class="p">;</span>
+    <span class="kt">address</span> <span class="k">payable</span> <span class="n">owner</span><span class="p">;</span>
+
+    <span class="k">mapping</span><span class="p">(</span><span class="kt">uint256</span> <span class="o">=&gt;</span> <span class="n">MarketItem</span><span class="p">)</span> <span class="k">private</span> <span class="n">id_to_market_item</span><span class="p">;</span>
+
+    <span class="k">struct</span> <span class="n">MarketItem</span>
+    <span class="p">{</span>
+        <span class="kt">uint256</span> <span class="n">token_id</span><span class="p">;</span>
+        <span class="kt">address</span> <span class="k">payable</span> <span class="n">seller</span><span class="p">;</span>
+        <span class="kt">address</span> <span class="k">payable</span> <span class="n">owner</span><span class="p">;</span>
+        <span class="kt">uint256</span> <span class="n">price</span><span class="p">;</span>
+        <span class="kt">bool</span> <span class="n">is_sold</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">event</span> <span class="n">MarketItemCreated</span>
+    <span class="p">(</span>
+        <span class="kt">uint256</span> <span class="k">indexed</span> <span class="n">token_id</span><span class="p">,</span>
+        <span class="kt">address</span> <span class="n">seller</span><span class="p">,</span>
+        <span class="kt">address</span> <span class="n">owner</span><span class="p">,</span>
+        <span class="kt">uint256</span> <span class="n">price</span><span class="p">,</span>
+        <span class="kt">bool</span> <span class="n">is_sold</span>
+    <span class="p">);</span>
+
+    <span class="k">constructor</span><span class="p">()</span> <span class="n">ERC721</span><span class="p">(</span><span class="s">"Metaverse Tokens"</span><span class="p">,</span> <span class="s">"METT"</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">owner</span> <span class="o">=</span> <span class="k">payable</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Updates the listing price of the contract
+</span>    <span class="k">function</span> <span class="n">updateListingPrice</span><span class="p">(</span><span class="kt">uint</span> <span class="n">_listing_price</span><span class="p">)</span> <span class="k">public</span> <span class="k">payable</span>
+    <span class="p">{</span>
+        <span class="nb">require</span><span class="p">(</span><span class="n">owner</span> <span class="o">==</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span> <span class="s">"Only marketplace owner can update listing price."</span><span class="p">);</span>
+        <span class="n">listing_price</span> <span class="o">=</span> <span class="n">_listing_price</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Returns the listing price of the contract
+</span>    <span class="k">function</span> <span class="n">getListingPrice</span><span class="p">()</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint256</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="n">listing_price</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Mints a token and lists it in the marketplace
+</span>    <span class="k">function</span> <span class="n">createToken</span><span class="p">(</span><span class="kt">string</span> <span class="k">memory</span> <span class="n">token_URI</span><span class="p">,</span> <span class="kt">uint256</span> <span class="n">price</span><span class="p">)</span> <span class="k">public</span> <span class="k">payable</span> <span class="k">returns</span> <span class="p">(</span><span class="kt">uint</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_token_ids</span><span class="p">.</span><span class="n">increment</span><span class="p">();</span>
+        <span class="kt">uint256</span> <span class="n">new_token_id</span> <span class="o">=</span> <span class="n">_token_ids</span><span class="p">.</span><span class="n">current</span><span class="p">();</span>
+
+        <span class="n">_mint</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">new_token_id</span><span class="p">);</span>
+        <span class="n">_setTokenURI</span><span class="p">(</span><span class="n">new_token_id</span><span class="p">,</span> <span class="n">token_URI</span><span class="p">);</span>
+        <span class="n">createMarketItem</span><span class="p">(</span><span class="n">new_token_id</span><span class="p">,</span> <span class="n">price</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">new_token_id</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="n">createMarketItem</span><span class="p">(</span><span class="kt">uint256</span> <span class="n">token_id</span><span class="p">,</span> <span class="kt">uint256</span> <span class="n">price</span><span class="p">)</span> <span class="k">private</span>
+    <span class="p">{</span>
+        <span class="nb">require</span><span class="p">(</span><span class="n">price</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"Price must be at least 1 wei"</span><span class="p">);</span>
+        <span class="nb">require</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="n">listing_price</span><span class="p">,</span> <span class="s">"Price must be equal to listing price"</span><span class="p">);</span>
+
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">MarketItem</span><span class="p">(</span>
+            <span class="n">token_id</span><span class="p">,</span>
+            <span class="k">payable</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">),</span>
+            <span class="k">payable</span><span class="p">(</span><span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">)),</span>
+            <span class="n">price</span><span class="p">,</span>
+            <span class="nb">false</span>
+        <span class="p">);</span>
+
+        <span class="n">_transfer</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span> <span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">),</span> <span class="n">token_id</span><span class="p">);</span>
+
+        <span class="k">emit</span> <span class="n">MarketItemCreated</span><span class="p">(</span>
+            <span class="n">token_id</span><span class="p">,</span>
+            <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span>
+            <span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">),</span>
+            <span class="n">price</span><span class="p">,</span>
+            <span class="nb">false</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Allows someone to resell a token they have purchased
+</span>    <span class="k">function</span> <span class="n">resellToken</span><span class="p">(</span><span class="kt">uint256</span> <span class="n">token_id</span><span class="p">,</span> <span class="kt">uint256</span> <span class="n">price</span><span class="p">)</span> <span class="k">public</span> <span class="k">payable</span>
+    <span class="p">{</span>
+        <span class="nb">require</span><span class="p">(</span><span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">owner</span> <span class="o">==</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span> <span class="s">"Only item owner can perform this operation"</span><span class="p">);</span>
+        <span class="nb">require</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="n">listing_price</span><span class="p">,</span> <span class="s">"Price must be equal to listing price"</span><span class="p">);</span>
+
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">is_sold</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span><span class="p">;</span>
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">seller</span> <span class="o">=</span> <span class="k">payable</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">);</span>
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">owner</span> <span class="o">=</span> <span class="k">payable</span><span class="p">(</span><span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">));</span>
+        <span class="n">_items_sold</span><span class="p">.</span><span class="n">decrement</span><span class="p">();</span>
+
+        <span class="n">_transfer</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span> <span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">),</span> <span class="n">token_id</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Creates the sale of a marketplace item
+</span>    <span class="c1">// Transfers ownership of the item, as well as funds between parties
+</span>    <span class="k">function</span> <span class="n">createMarketSale</span><span class="p">(</span><span class="kt">uint256</span> <span class="n">token_id</span><span class="p">)</span> <span class="k">public</span> <span class="k">payable</span>
+    <span class="p">{</span>
+        <span class="kt">uint</span> <span class="n">price</span> <span class="o">=</span> <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">price</span><span class="p">;</span>
+        <span class="kt">address</span> <span class="n">seller</span> <span class="o">=</span> <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">seller</span><span class="p">;</span>
+
+        <span class="nb">require</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="n">price</span><span class="p">,</span> <span class="s">"Please submit the asking price in order to complete the purchase"</span><span class="p">);</span>
+
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">owner</span> <span class="o">=</span> <span class="k">payable</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">);</span>
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">is_sold</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">token_id</span><span class="p">].</span><span class="n">seller</span> <span class="o">=</span> <span class="k">payable</span><span class="p">(</span><span class="kt">address</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+
+        <span class="n">_items_sold</span><span class="p">.</span><span class="n">increment</span><span class="p">();</span>
+        <span class="n">_transfer</span><span class="p">(</span><span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">),</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">,</span> <span class="n">token_id</span><span class="p">);</span>
+
+        <span class="k">payable</span><span class="p">(</span><span class="n">owner</span><span class="p">).</span><span class="nb">transfer</span><span class="p">(</span><span class="n">listing_price</span><span class="p">);</span>
+        <span class="k">payable</span><span class="p">(</span><span class="n">seller</span><span class="p">).</span><span class="nb">transfer</span><span class="p">(</span><span class="n">msg</span><span class="p">.</span><span class="n">value</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Returns all unsold market items
+</span>    <span class="k">function</span> <span class="n">fetchMarketItems</span><span class="p">()</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="n">MarketItem</span><span class="p">[]</span> <span class="k">memory</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">uint</span> <span class="n">item_count</span> <span class="o">=</span> <span class="n">_token_ids</span><span class="p">.</span><span class="n">current</span><span class="p">();</span>
+        <span class="kt">uint</span> <span class="n">unsold_item_count</span> <span class="o">=</span> <span class="n">_token_ids</span><span class="p">.</span><span class="n">current</span><span class="p">()</span> <span class="o">-</span> <span class="n">_items_sold</span><span class="p">.</span><span class="n">current</span><span class="p">();</span>
+        <span class="kt">uint</span> <span class="n">current_index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="n">MarketItem</span><span class="p">[]</span> <span class="k">memory</span> <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MarketItem</span><span class="p">[](</span><span class="n">unsold_item_count</span><span class="p">);</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">uint</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">item_count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">id_to_market_item</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">owner</span> <span class="o">==</span> <span class="kt">address</span><span class="p">(</span><span class="nb">this</span><span class="p">))</span>
+            <span class="p">{</span>
+                <span class="kt">uint</span> <span class="n">curr_id</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">MarketItem</span> <span class="k">storage</span> <span class="n">curr_item</span> <span class="o">=</span> <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">curr_id</span><span class="p">];</span>
+                <span class="n">items</span><span class="p">[</span><span class="n">current_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">curr_item</span><span class="p">;</span>
+                <span class="n">current_index</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">items</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Returns only items that a user has purchased
+</span>    <span class="k">function</span> <span class="n">fetchMyNFTs</span><span class="p">()</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="n">MarketItem</span><span class="p">[]</span> <span class="k">memory</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">uint</span> <span class="n">total_item_count</span> <span class="o">=</span> <span class="n">_token_ids</span><span class="p">.</span><span class="n">current</span><span class="p">();</span>
+        <span class="kt">uint</span> <span class="n">item_count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">uint</span> <span class="n">current_index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">uint</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">total_item_count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">id_to_market_item</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">owner</span> <span class="o">==</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">item_count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">MarketItem</span><span class="p">[]</span> <span class="k">memory</span> <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MarketItem</span><span class="p">[](</span><span class="n">item_count</span><span class="p">);</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">uint</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">total_item_count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">id_to_market_item</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">owner</span> <span class="o">==</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="kt">uint</span> <span class="n">curr_id</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">MarketItem</span> <span class="k">storage</span> <span class="n">curr_item</span> <span class="o">=</span> <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">curr_id</span><span class="p">];</span>
+                <span class="n">items</span><span class="p">[</span><span class="n">current_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">curr_item</span><span class="p">;</span>
+                <span class="n">current_index</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">items</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Returns only items that a user has listed
+</span>    <span class="k">function</span> <span class="n">fetchItemsListed</span><span class="p">()</span> <span class="k">public</span> <span class="k">view</span> <span class="k">returns</span> <span class="p">(</span><span class="n">MarketItem</span><span class="p">[]</span> <span class="k">memory</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">uint</span> <span class="n">total_item_count</span> <span class="o">=</span> <span class="n">_token_ids</span><span class="p">.</span><span class="n">current</span><span class="p">();</span>
+        <span class="kt">uint</span> <span class="n">item_count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">uint</span> <span class="n">current_index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">uint</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">total_item_count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">id_to_market_item</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">seller</span> <span class="o">==</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="n">item_count</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="n">MarketItem</span><span class="p">[]</span> <span class="k">memory</span> <span class="n">items</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MarketItem</span><span class="p">[](</span><span class="n">item_count</span><span class="p">);</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">uint</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">total_item_count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">id_to_market_item</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">].</span><span class="n">seller</span> <span class="o">==</span> <span class="n">msg</span><span class="p">.</span><span class="n">sender</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="kt">uint</span> <span class="n">curr_id</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">MarketItem</span> <span class="k">storage</span> <span class="n">curr_item</span> <span class="o">=</span> <span class="n">id_to_market_item</span><span class="p">[</span><span class="n">curr_id</span><span class="p">];</span>
+                <span class="n">items</span><span class="p">[</span><span class="n">current_index</span><span class="p">]</span> <span class="o">=</span> <span class="n">curr_item</span><span class="p">;</span>
+                <span class="n">current_index</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">items</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>This contract inherits from the ERC721 standard implemented by OpenZepplin.</p>
+
+<blockquote>
+  <p>OpenZeppelin is an open-source platform for building secure dapps. The framework provides the required tools to create and automate Web3 applications.</p>
+</blockquote>
+
+<p>Next, I was hoping to test out the core functionality of the smart contract code and environment, including:</p>
+
+<ul>
+  <li>Minting a token</li>
+  <li>Listing the token for sale</li>
+  <li>Selling the token to another user</li>
+  <li>Querying for tokens</li>
+</ul>
+
+<h2 id="writing-the-test">Writing the test</h2>
+
+<p>To create the test locally, I replaced the sample code in <code class="highlighter-rouge">test/sample-test.js</code> with:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">describe</span><span class="p">(</span><span class="dl">"</span><span class="s2">FinalStatic</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nx">it</span><span class="p">(</span><span class="dl">"</span><span class="s2">Should create and execute market sales</span><span class="dl">"</span><span class="p">,</span> <span class="k">async</span> <span class="kd">function</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Deploy the marketplace</span>
+        <span class="kd">const</span> <span class="nx">FinalStatic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">getContractFactory</span><span class="p">(</span><span class="dl">"</span><span class="s2">FinalStatic</span><span class="dl">"</span><span class="p">)</span>
+        <span class="kd">const</span> <span class="nx">finalStatic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">FinalStatic</span><span class="p">.</span><span class="nx">deploy</span><span class="p">()</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">deployed</span><span class="p">()</span>
+
+        <span class="kd">let</span> <span class="nx">listing_price</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">getListingPrice</span><span class="p">()</span>
+        <span class="nx">listing_price</span> <span class="o">=</span> <span class="nx">listing_price</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+
+        <span class="kd">const</span> <span class="nx">auction_price</span> <span class="o">=</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">parseUnits</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">)</span>
+
+        <span class="c1">// Create 2 tokens</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://mytokenlocation1.com</span><span class="dl">"</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">})</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://mytokenlocation2.com</span><span class="dl">"</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">})</span>
+
+        <span class="kd">const</span> <span class="p">[</span><span class="nx">_</span><span class="p">,</span> <span class="nx">buyer_address</span><span class="p">]</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">getSigners</span><span class="p">()</span>
+
+        <span class="c1">// Execute sale of token to another user</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">buyer_address</span><span class="p">).</span><span class="nx">createMarketSale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">auction_price</span> <span class="p">})</span>
+
+        <span class="c1">// Resell a token</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">buyer_address</span><span class="p">).</span><span class="nx">resellToken</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">})</span>
+
+        <span class="c1">// Query for and return the unsold items</span>
+        <span class="nx">items</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">fetchMarketItems</span><span class="p">()</span>
+        <span class="nx">items</span> <span class="o">=</span> <span class="k">await</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">items</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="k">async</span> <span class="nx">i</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="kd">const</span> <span class="nx">token_URI</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">tokenURI</span><span class="p">(</span><span class="nx">i</span><span class="p">.</span><span class="nx">token_id</span><span class="p">)</span>
+
+            <span class="kd">let</span> <span class="nx">item</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="na">price</span><span class="p">:</span> <span class="nx">i</span><span class="p">.</span><span class="nx">price</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span>
+                <span class="na">token_id</span><span class="p">:</span> <span class="nx">i</span><span class="p">.</span><span class="nx">token_id</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span>
+                <span class="na">seller</span><span class="p">:</span> <span class="nx">i</span><span class="p">.</span><span class="nx">seller</span><span class="p">,</span>
+                <span class="na">owner</span><span class="p">:</span> <span class="nx">i</span><span class="p">.</span><span class="nx">owner</span><span class="p">,</span>
+                <span class="nx">token_URI</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="nx">item</span>
+        <span class="p">}))</span>
+
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">items: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">items</span><span class="p">)</span>
+    <span class="p">})</span>
+<span class="p">});</span></code></pre></figure>
+
+<h2 id="running-the-test">Running the test</h2>
+
+<p>To start the test, I ran this command on Terminal:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">npx hardhat test</span></code></pre></figure>
+
+<p>Here’s the result I got:</p>
+
+<p><img src="/assets/images/2022/04/05/final-static_implementing-smart-contract_cover.png" alt="image-center" class="align-center" /></p>
+
+<p>From the log, we can see an array which contains the two marketplace placeholder items — indicating a successful test.</p>
+
+<p>That’s great progress with the backbone so far.</p>
+
+<p>Let’s jump over to the client side in the next post, where I will start building out the front end.</p>
+
+        
+      </section>
+
+      <div>
+      
+      
+      <h2 class="page__meta"><strong><i class="fas fa-fw fa-list-alt" aria-hidden="true"></i></strong>
+      Categories:
+      
+      <a href="/final-static"> final-static</a>
+      
+      </h2>
+      
+      
+      </div>
+
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+        <!--
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-04-05T17:18:21+08:00">April 5, 2022</time></p>
+        
+        -->
+      </footer>
+
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/final-static/dapp-project-setup/" class="pagination--pager" title="Dapp Project Setup
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Find me on:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/kathfinder" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://facebook.com/inventgineer" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/kathfinder" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://medium.com/@kathyli" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-medium" aria-hidden="true"></i> Medium</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/kathyli" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+        
+      
+    
+
+    <!--<li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>-->
+  </ul>
+</div>
+
+<div class="page__footer-copyright"><p>&copy; 2022 Kathy's Blog by <a href='https://kathy.li'>Kathy Li</a>.</p>
+    <small>Powered by coffee, <a href='https://jekyllrb.com/' target='_blank'>Jekyll</a>, and the <a href='https://mademistakes.com/work/minimal-mistakes-jekyll-theme/' target='_blank'>Minimal Mistakes</a> theme.</small>
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

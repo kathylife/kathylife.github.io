@@ -114,6 +114,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/final-static/dapp-project-setup/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Implementing the Smart Contract",
+        "excerpt":"As documented in the previous post, I built out the application skeleton which came with an auto-generated sample Solidity smart contract. A smart contract is a self-executing protocol with the terms of the agreement between two parties (e.g. buyer and seller) being directly written into lines of code. The code...","categories": ["final-static"],
+        "tags": [],
+        "url": "https://kathy.life/final-static/implementing-smart-contract/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
