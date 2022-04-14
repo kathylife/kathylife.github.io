@@ -119,6 +119,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/final-static/implementing-smart-contract/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Building the Front End",
+        "excerpt":"Previously for Final Static, I built and tested the NFT marketplace’s smart contract. To support user interactions that work with it, the next important step would be to build out the web-based front end. This was where the Tailwind CSS setup came in handy as well. Building the navigation bar...","categories": ["final-static"],
+        "tags": [],
+        "url": "https://kathy.life/final-static/building-front-end/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],

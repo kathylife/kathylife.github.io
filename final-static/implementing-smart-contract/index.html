@@ -450,29 +450,30 @@
     <span class="nx">it</span><span class="p">(</span><span class="dl">"</span><span class="s2">Should create and execute market sales</span><span class="dl">"</span><span class="p">,</span> <span class="k">async</span> <span class="kd">function</span><span class="p">()</span>
     <span class="p">{</span>
         <span class="c1">// Deploy the marketplace</span>
-        <span class="kd">const</span> <span class="nx">FinalStatic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">getContractFactory</span><span class="p">(</span><span class="dl">"</span><span class="s2">FinalStatic</span><span class="dl">"</span><span class="p">)</span>
-        <span class="kd">const</span> <span class="nx">finalStatic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">FinalStatic</span><span class="p">.</span><span class="nx">deploy</span><span class="p">()</span>
-        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">deployed</span><span class="p">()</span>
+        <span class="kd">const</span> <span class="nx">FinalStatic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">getContractFactory</span><span class="p">(</span><span class="dl">"</span><span class="s2">FinalStatic</span><span class="dl">"</span><span class="p">);</span>
+        <span class="kd">const</span> <span class="nx">finalStatic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">FinalStatic</span><span class="p">.</span><span class="nx">deploy</span><span class="p">();</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">deployed</span><span class="p">();</span>
 
-        <span class="kd">let</span> <span class="nx">listing_price</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">getListingPrice</span><span class="p">()</span>
-        <span class="nx">listing_price</span> <span class="o">=</span> <span class="nx">listing_price</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span>
+        <span class="kd">let</span> <span class="nx">listing_price</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">getListingPrice</span><span class="p">();</span>
+        <span class="nx">listing_price</span> <span class="o">=</span> <span class="nx">listing_price</span><span class="p">.</span><span class="nx">toString</span><span class="p">();</span>
 
-        <span class="kd">const</span> <span class="nx">auction_price</span> <span class="o">=</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">parseUnits</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">)</span>
+        <span class="kd">const</span> <span class="nx">auction_price</span> <span class="o">=</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">parseUnits</span><span class="p">(</span><span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">);</span>
 
         <span class="c1">// Create 2 tokens</span>
-        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://mytokenlocation1.com</span><span class="dl">"</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">})</span>
-        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://mytokenlocation2.com</span><span class="dl">"</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">})</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://mytokenlocation1.com</span><span class="dl">"</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">});</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">createToken</span><span class="p">(</span><span class="dl">"</span><span class="s2">https://mytokenlocation2.com</span><span class="dl">"</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">});</span>
 
-        <span class="kd">const</span> <span class="p">[</span><span class="nx">_</span><span class="p">,</span> <span class="nx">buyer_address</span><span class="p">]</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">getSigners</span><span class="p">()</span>
+        <span class="kd">const</span> <span class="p">[</span><span class="nx">_</span><span class="p">,</span> <span class="nx">buyer_address</span><span class="p">]</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">ethers</span><span class="p">.</span><span class="nx">getSigners</span><span class="p">();</span>
 
         <span class="c1">// Execute sale of token to another user</span>
-        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">buyer_address</span><span class="p">).</span><span class="nx">createMarketSale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">auction_price</span> <span class="p">})</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">buyer_address</span><span class="p">).</span><span class="nx">createMarketSale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">auction_price</span> <span class="p">});</span>
 
         <span class="c1">// Resell a token</span>
-        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">buyer_address</span><span class="p">).</span><span class="nx">resellToken</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">})</span>
+        <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">buyer_address</span><span class="p">).</span><span class="nx">resellToken</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">auction_price</span><span class="p">,</span> <span class="p">{</span> <span class="na">value</span><span class="p">:</span> <span class="nx">listing_price</span> <span class="p">});</span>
 
         <span class="c1">// Query for and return the unsold items</span>
-        <span class="nx">items</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">fetchMarketItems</span><span class="p">()</span>
+        <span class="nx">items</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">fetchMarketItems</span><span class="p">();</span>
+
         <span class="nx">items</span> <span class="o">=</span> <span class="k">await</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">(</span><span class="nx">items</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="k">async</span> <span class="nx">i</span> <span class="o">=&gt;</span> <span class="p">{</span>
             <span class="kd">const</span> <span class="nx">token_URI</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">finalStatic</span><span class="p">.</span><span class="nx">tokenURI</span><span class="p">(</span><span class="nx">i</span><span class="p">.</span><span class="nx">token_id</span><span class="p">)</span>
 
@@ -482,12 +483,12 @@
                 <span class="na">seller</span><span class="p">:</span> <span class="nx">i</span><span class="p">.</span><span class="nx">seller</span><span class="p">,</span>
                 <span class="na">owner</span><span class="p">:</span> <span class="nx">i</span><span class="p">.</span><span class="nx">owner</span><span class="p">,</span>
                 <span class="nx">token_URI</span>
-            <span class="p">}</span>
+            <span class="p">};</span>
 
-            <span class="k">return</span> <span class="nx">item</span>
+            <span class="k">return</span> <span class="nx">item</span><span class="p">;</span>
         <span class="p">}))</span>
 
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">items: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">items</span><span class="p">)</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">items: </span><span class="dl">"</span><span class="p">,</span> <span class="nx">items</span><span class="p">);</span>
     <span class="p">})</span>
 <span class="p">});</span></code></pre></figure>
 
@@ -548,7 +549,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/final-static/building-front-end/" class="pagination--pager" title="Building the Front End
+">Next</a>
     
   </nav>
 
