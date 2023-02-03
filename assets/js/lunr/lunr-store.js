@@ -124,6 +124,16 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/final-static/building-front-end/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #1",
+        "excerpt":"Life is but a dream   When the stomach demands cake   I know I’m awake  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/haiku-1/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #2",
+        "excerpt":"Ran with all my strength   Harsh lull at the finish line   Next bus comes in nine  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/haiku-2/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
