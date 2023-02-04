@@ -134,6 +134,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/haiku-2/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #3",
+        "excerpt":"Light became bright red   Reshaping all lights ahead   Rushed driver saw red  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/haiku-3/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
