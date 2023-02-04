@@ -139,6 +139,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/haiku-3/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #4",
+        "excerpt":"She was on the phone   Neglecting not just the honk   But life of her own  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/haiku-4/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
