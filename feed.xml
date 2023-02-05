@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2023-02-05T04:25:37+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Haiku #4</title><link href="https://kathy.life/haiku/haiku-4/" rel="alternate" type="text/html" title="Haiku #4" /><published>2023-02-05T01:28:21+08:00</published><updated>2023-02-05T01:28:21+08:00</updated><id>https://kathy.life/haiku/haiku-4</id><content type="html" xml:base="https://kathy.life/haiku/haiku-4/">&lt;p&gt;She was on the phone&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://kathy.life/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kathy.life/" rel="alternate" type="text/html" /><updated>2023-02-05T14:40:04+08:00</updated><id>https://kathy.life/feed.xml</id><title type="html">Kathy’s Blog</title><subtitle>Life is too short to build boring things.</subtitle><author><name>Kathy Li</name></author><entry><title type="html">Haiku #5</title><link href="https://kathy.life/haiku/haiku-5/" rel="alternate" type="text/html" title="Haiku #5" /><published>2023-02-05T14:38:21+08:00</published><updated>2023-02-05T14:38:21+08:00</updated><id>https://kathy.life/haiku/haiku-5</id><content type="html" xml:base="https://kathy.life/haiku/haiku-5/">&lt;p&gt;Light years might be far&lt;/p&gt;
+
+&lt;p&gt;Well-thought-out goals can be reached&lt;/p&gt;
+
+&lt;p&gt;As can that snack jar&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Light years might be far</summary></entry><entry><title type="html">Haiku #4</title><link href="https://kathy.life/haiku/haiku-4/" rel="alternate" type="text/html" title="Haiku #4" /><published>2023-02-05T01:28:21+08:00</published><updated>2023-02-05T01:28:21+08:00</updated><id>https://kathy.life/haiku/haiku-4</id><content type="html" xml:base="https://kathy.life/haiku/haiku-4/">&lt;p&gt;She was on the phone&lt;/p&gt;
 
 &lt;p&gt;Neglecting not just the honk&lt;/p&gt;
 
@@ -854,71 +858,4 @@ brew install nvm&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/26/final-static_custom-emails_22-a.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As things stand, the first edition of this guide has been one of my most viewed Medium articles thus far.</summary></entry><entry><title type="html">If You Name It</title><link href="https://kathy.life/final-static/if-you-name-it/" rel="alternate" type="text/html" title="If You Name It" /><published>2022-03-23T17:33:21+08:00</published><updated>2022-03-23T17:33:21+08:00</updated><id>https://kathy.life/final-static/if-you-name-it</id><content type="html" xml:base="https://kathy.life/final-static/if-you-name-it/">&lt;p&gt;When we give our pet project a name and identity, we become that much more attached to it and, in turn, may just have a higher likelihood of seeing it through.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-new-project&quot;&gt;The New Project&lt;/h2&gt;
-
-&lt;p&gt;Earlier in the month I got an idea to start “Project NFT Inception” — a project where I would code up an NFT marketplace for code, which would then sell its own source code.&lt;/p&gt;
-
-&lt;p&gt;An idea, of course, doesn’t mean much if there’s no action to back it up. That’s why  the plan is to start building out the prototype as soon as I can. To make the most out of the experience, I am also going to be documenting the entire process every step of the way.&lt;/p&gt;
-
-&lt;p&gt;What you are reading now is essentially the first post of this dedicated blog series by the same moniker.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-name&quot;&gt;The Name&lt;/h2&gt;
-
-&lt;p&gt;As you may have guessed, “Project NFT Inception” is really just a code name. Not too long after coming up with the project idea, I was really stoked to have then thought of an official brand name that I was honestly quite fond of. Ladies and gentlemen, may I present to you, “Final Static.”&lt;/p&gt;
-
-&lt;p&gt;If you are a fellow developer who has a good grasp of Java, you’ll probably immediately get the meaning behind this name.&lt;/p&gt;
-
-&lt;p&gt;But if it isn’t obvious to you, no worries. I’ll break it down below.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-its-a-fitting-name&quot;&gt;Why It’s a Fitting Name&lt;/h2&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;final&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt; are both keywords in the Java language. A combination of the two keywords (either &lt;code class=&quot;highlighter-rouge&quot;&gt;final static&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;static final&lt;/code&gt;) is normally used to define constants in Java. Individually, they each have their own meaning as well.&lt;/p&gt;
-
-&lt;p&gt;When a field is marked &lt;code class=&quot;highlighter-rouge&quot;&gt;final&lt;/code&gt;, its value is permanent and can’t be modified once assigned.&lt;/p&gt;
-
-&lt;p&gt;This is somewhat analogous to how items like smart contracts on the blockchain are immutable.&lt;/p&gt;
-
-&lt;p&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt; field means there is ever only one single copy (in other words, just the original) of it. When a field is declared &lt;code class=&quot;highlighter-rouge&quot;&gt;static&lt;/code&gt;, it remains the same for every instance of the class, and at the same time can also be accessed by pretty much any other classes — without its class object needing to be instantiated.&lt;/p&gt;
-
-&lt;p&gt;In essence, this is very much like how NFT works. While anyone can technically access and download the digital assets, there is ever only one authentic ownership.&lt;/p&gt;
-
-&lt;p&gt;The only-ness and permanence are why I thought “Final Static” would make a great name for an NFT marketplace, given NFT’s nature. In addition, the fact that it is a combination of commonly used programming keywords makes the name all the more appropriate for a marketplace dedicated specifically to computer code.&lt;/p&gt;
-
-&lt;p&gt;Granted, the two Java keywords have some additional characteristics too. But for the sake of explaining the brand name adoption, I am only listing the ones that draw similarities with NFT source code.&lt;/p&gt;
-
-&lt;h2 id=&quot;claim-the-domain&quot;&gt;Claim the Domain&lt;/h2&gt;
-
-&lt;p&gt;With the name locked down, it’s time to purchase a domain name. This part was a no-brainer. I basically just went with one of my usual registrars, Google Domains.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/23/final-static_google-domains.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Speaking of which, if you are reading this post shortly after it’s published, I think I may have a nice surprise for you. Apparently Google Domains has recently moved out of Beta, and I got a celebratory email update from them that came with a discount code.&lt;/p&gt;
-
-&lt;p&gt;I ought to make it clear that this is not an ad for Google Domains, nor is this post affiliated with them. I am merely including the discount code in case you happened to find it useful. So here goes. In the email it says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h3 id=&quot;invite-your-friends&quot;&gt;Invite your friends&lt;/h3&gt;
-  &lt;p&gt;Have a friend who hasn’t tried Google Domains yet? New users can enter code &lt;strong&gt;FRIENDSOFDOMAINS&lt;/strong&gt; at checkout for 25% off** a new domain or transfer﻿-﻿in.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;the-logo&quot;&gt;The Logo&lt;/h2&gt;
-
-&lt;p&gt;When it comes to brand identities, I normally don’t make it a priority to have the “perfect” logo in place. In fact, in almost all past projects, I would just scribble up the first editions myself.&lt;/p&gt;
-
-&lt;p&gt;Here’s one I made for Final Static in Photoshop:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2022/03/23/final-static_photoshop-logo.png&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-email&quot;&gt;The Email&lt;/h2&gt;
-
-&lt;p&gt;Having a name at my disposal really helps smoothen the process of getting the wheels rolling. Almost equally important would be an email address. For that purpose, I went on to sign up for a free Gmail account to use for the project.&lt;/p&gt;
-
-&lt;p&gt;In the next post, I will go over what I did to hook up the custom domain emails with this new Gmail account.&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;**Google Domains Out of Beta Refer-a-Friend Discount Terms &amp;amp; Conditions&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;Valid for 25% discount, with a maximum redemption value of $10 USD (or the local currency equivalent), against a new or transfer in domain registration price from eligible top level domains on Google Domains. Discount pricing valid for the initial purchase term for a single domain registration only. Renewal pricing subject to change. Limit one discount per domain name registration per customer. Google reserves the right to cancel, suspend or modify part of this offer at any time without notice, for any reason in its sole discretion. Promotional code must be automatically or manually applied, is non-transferable and has no cash value. To redeem the offer, you must have or activate a Google account. Offer ends March 29, 2022 or while supplies last.&lt;/small&gt;&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">Then it's all official.</summary></entry></feed>
+&lt;p&gt;That’s it!&lt;/p&gt;</content><author><name>Kathy Li</name></author><summary type="html">As things stand, the first edition of this guide has been one of my most viewed Medium articles thus far.</summary></entry></feed>

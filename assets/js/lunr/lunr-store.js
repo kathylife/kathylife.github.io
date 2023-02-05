@@ -144,6 +144,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/haiku-4/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #5",
+        "excerpt":"Light years might be far   Well-thought-out goals can be reached   As can that snack jar  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/haiku-5/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
