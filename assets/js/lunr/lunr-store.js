@@ -154,6 +154,16 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/6/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #7",
+        "excerpt":"Napping on the bus   Woken up by a man’s cough   Right where I’d get off  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/7/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #8",
+        "excerpt":"Large crowds in the streets   Twelve thousand destinations   Twelve constellations  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/8/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
