@@ -149,6 +149,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/haiku-5/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #6",
+        "excerpt":"Sometimes the sky’s gray   It can’t be blue every day   Just go out and play  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/haiku-6/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
