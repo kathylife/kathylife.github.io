@@ -127,32 +127,32 @@ var store = [{
         "title": "Haiku #1",
         "excerpt":"Life is but a dream   When the stomach demands cake   I know I’m awake  ","categories": ["haiku"],
         "tags": [],
-        "url": "https://kathy.life/haiku/haiku-1/",
+        "url": "https://kathy.life/haiku/1/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Haiku #2",
         "excerpt":"Ran with all my strength   Harsh lull at the finish line   Next bus comes in nine  ","categories": ["haiku"],
         "tags": [],
-        "url": "https://kathy.life/haiku/haiku-2/",
+        "url": "https://kathy.life/haiku/2/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Haiku #3",
         "excerpt":"Light became bright red   Reshaping all lights ahead   Rushed driver saw red  ","categories": ["haiku"],
         "tags": [],
-        "url": "https://kathy.life/haiku/haiku-3/",
+        "url": "https://kathy.life/haiku/3/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Haiku #4",
         "excerpt":"She was on the phone   Neglecting not just the honk   But life of her own  ","categories": ["haiku"],
         "tags": [],
-        "url": "https://kathy.life/haiku/haiku-4/",
+        "url": "https://kathy.life/haiku/4/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Haiku #5",
         "excerpt":"Light years might be far   Well-thought-out goals can be reached   As can that snack jar  ","categories": ["haiku"],
         "tags": [],
-        "url": "https://kathy.life/haiku/haiku-5/",
+        "url": "https://kathy.life/haiku/5/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Haiku #6",
         "excerpt":"Sometimes the sky’s gray   It can’t be blue every day   Just go out and play  ","categories": ["haiku"],
         "tags": [],
-        "url": "https://kathy.life/haiku/haiku-6/",
+        "url": "https://kathy.life/haiku/6/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
