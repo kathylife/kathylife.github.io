@@ -189,6 +189,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/13/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #14",
+        "excerpt":"Written by Kathy   All work is original   Including this line  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/14/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
