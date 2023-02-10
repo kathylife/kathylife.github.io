@@ -164,6 +164,26 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/8/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #9",
+        "excerpt":"Year of the Rabbit   Could mark a perfect start — to   Bury the hatchet   * * * * * * * * * *   Version 2.0:   Year of the Rabbit   Could mark a perfect start — to   Form a new habit  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/9/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #10",
+        "excerpt":"Believe in yourself   For no one will, if you don’t   Believe in yourself  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/10/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #11",
+        "excerpt":"Quaoar has a ring   That perplexes everyone   I do not have one  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/11/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #12",
+        "excerpt":"Something of a coup   Did you happen to notice   This is a haiku  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/12/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
