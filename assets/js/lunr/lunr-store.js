@@ -184,6 +184,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/12/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #13",
+        "excerpt":"Stopped at a crossroads   Most people know where they’ll go   Some need an arrow  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/13/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
