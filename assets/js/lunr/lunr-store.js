@@ -194,6 +194,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/14/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #15",
+        "excerpt":"Statue by the stream   Turned out to be a still bird   In a preying scheme  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/15/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
