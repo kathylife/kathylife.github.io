@@ -204,6 +204,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/16th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #17",
+        "excerpt":"You’re my cuppycake   In my tummy you betake   For yumminess’ sake   * * * * * * * * * *   Happy Valentine’s!  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/17th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
