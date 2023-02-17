@@ -209,6 +209,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/17th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #18",
+        "excerpt":"You learn plentiful   When you build something yourself   Shelve the off-the-shelf  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/18th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
