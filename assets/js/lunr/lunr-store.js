@@ -214,6 +214,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/18th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #19",
+        "excerpt":"We are just some dirt   Somewhere in the universe   What matter matters  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/19th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
