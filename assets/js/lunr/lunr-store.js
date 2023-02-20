@@ -219,6 +219,21 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/19th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #20",
+        "excerpt":"The hunt for glasses —   A needle in a haystack   For glasses I lack  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/20th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #21",
+        "excerpt":"How do we fare well   In a social occasion   Where we bid farewell  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/21st/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #22",
+        "excerpt":"Twenty four seven   Not a day more if we stall   Time is fair to all  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/22nd/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
