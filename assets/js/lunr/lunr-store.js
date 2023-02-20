@@ -230,7 +230,7 @@ var store = [{
         "url": "https://kathy.life/haiku/21st/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Haiku #22",
-        "excerpt":"Twenty four seven   Not a day more if we stall   Time is fair to all  ","categories": ["haiku"],
+        "excerpt":"Twenty four seven   Not an hour more if we stall   Time is fair to all  ","categories": ["haiku"],
         "tags": [],
         "url": "https://kathy.life/haiku/22nd/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
