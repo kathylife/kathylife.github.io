@@ -234,6 +234,16 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/22nd/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #23",
+        "excerpt":"Tripped and nearly fell   All the way down the stairwell   Lived with tale to tell  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/23rd/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #24",
+        "excerpt":"Hug your grandparents   Every time you get to meet   It’s a numbered treat  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/24th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
