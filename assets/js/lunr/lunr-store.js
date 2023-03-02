@@ -244,6 +244,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/24th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #25",
+        "excerpt":"Beauty is skin deep   Virtues are what define you   Value your value  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/25th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
