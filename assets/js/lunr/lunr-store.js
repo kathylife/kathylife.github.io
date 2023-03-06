@@ -249,6 +249,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/25th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #26",
+        "excerpt":"Home is where we dream   Where we sip coffee with cream   Under the moonbeam  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/26th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
