@@ -254,6 +254,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/26th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Haiku #27",
+        "excerpt":"How many more times   Do our hearts need to shatter   Over these cruel crimes  ","categories": ["haiku"],
+        "tags": [],
+        "url": "https://kathy.life/haiku/27th/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
