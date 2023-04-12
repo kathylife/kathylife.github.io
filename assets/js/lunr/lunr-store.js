@@ -259,6 +259,11 @@ var store = [{
         "tags": [],
         "url": "https://kathy.life/haiku/27th/",
         "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
+        "title": "Last Post on This Site",
+        "excerpt":"Hi everyone, my blog has now been moved to https://kathy.works   This site here will no longer be updated. See you across the web pond!  ","categories": ["blog"],
+        "tags": [],
+        "url": "https://kathy.life/blog/last-post-here/",
+        "teaser":"https://kathy.life/assets/images/kathy-life-cover.png"},{
         "title": "Chocolate",
         "excerpt":"Chocolate cupcake   ----------   Source: none  ","categories": [],
         "tags": [],
